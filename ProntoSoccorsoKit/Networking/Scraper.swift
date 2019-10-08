@@ -13,12 +13,12 @@ final class Scraper: NSObject {
 
     private let url: URL
     private let mapper: (Data) throws -> [HealthInstitute]
-    private let completion: ([HealthInstitute]?, RequestError?) -> Void
+    private let completion: (Result<[HealthInstitute], RequestError>) -> Void
     private var whenDone: (() -> Void)?
 
     init(url: URL,
          mapper: @escaping (Data) throws -> [HealthInstitute],
-         completion: @escaping ([HealthInstitute]?, RequestError?) -> Void) {
+         completion: @escaping (Result<[HealthInstitute], RequestError>) -> Void) {
         self.url = url
         self.mapper = mapper
         self.completion = completion
@@ -50,15 +50,15 @@ extension Scraper: WKNavigationDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             webView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { innerHTML, error in
                 if let error = error {
-                    DispatchQueue.main.async { self.completion(nil, RequestError.scraping(error)) }
+                    DispatchQueue.main.async { self.completion(.failure(.scraping(error))) }
                 } else {
                     do {
                         let htmlString = (innerHTML as? String) ?? ""
                         let data = htmlString.data(using: .utf8)!
                         let result = try self.mapper(data)
-                        DispatchQueue.main.async { self.completion(result, nil) }
+                        DispatchQueue.main.async { self.completion(.success(result)) }
                     } catch {
-                        DispatchQueue.main.async { self.completion(nil, RequestError.deserialization(error)) }
+                        DispatchQueue.main.async { self.completion(.failure(.deserialization(error))) }
                     }
                 }
             }

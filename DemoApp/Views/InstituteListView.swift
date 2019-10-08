@@ -22,12 +22,13 @@ final class InstituteListViewModel: ObservableObject {
         isLoading = true
 
         bag = Future<[HealthInstitute], RequestError> { promise in
-            ProntoSoccorso.region(self.region).fetch { institutes, error in
-                guard let institutes = institutes else {
-                    promise(.failure(error!))
-                    return
+            ProntoSoccorso.region(self.region).fetch { result in
+                switch result {
+                case let .success(institutes):
+                    promise(.success(institutes))
+                case let .failure(error):
+                    promise(.failure(error))
                 }
-                promise(.success(institutes))
             }
         }
         .replaceError(with: [])

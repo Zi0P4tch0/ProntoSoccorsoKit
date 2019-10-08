@@ -10,7 +10,7 @@ public enum RequestError: Error {
 }
 
 public protocol Request {
-    func fetch(with completion: @escaping ([HealthInstitute]?, RequestError?) -> Void)
+    func fetch(with completion: @escaping (Result<[HealthInstitute], RequestError>) -> Void)
 }
 
 final class RequestImplementation {
@@ -32,9 +32,9 @@ final class RequestImplementation {
 
 
 // MARK: - WebserviceType
-extension RequestImplementation: Request{
+extension RequestImplementation: Request {
 
-    public func fetch(with completion: @escaping ([HealthInstitute]?, RequestError?) -> Void) {
+    public func fetch(with completion: @escaping (Result<[HealthInstitute], RequestError>) -> Void) {
 
         if isScraping {
             scraper = Scraper(url: url, mapper: mapper, completion: completion)
@@ -47,22 +47,22 @@ extension RequestImplementation: Request{
 
     }
 
-    private func GET(with completion: @escaping ([HealthInstitute]?, RequestError?) -> Void) {
+    private func GET(with completion: @escaping (Result<[HealthInstitute], RequestError>) -> Void) {
 
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
-                DispatchQueue.main.async { completion(nil, .local(error)) }
+                DispatchQueue.main.async { completion(.failure(.local(error))) }
             } else {
                 let statusCode = (response as! HTTPURLResponse).statusCode
                 if 200...299 ~= statusCode {
                     do {
                         let institutes = try self.mapper(data!)
-                        DispatchQueue.main.async { completion(institutes, nil) }
+                        DispatchQueue.main.async { completion(.success(institutes)) }
                     } catch {
-                        DispatchQueue.main.async { completion(nil, .deserialization(error)) }
+                        DispatchQueue.main.async { completion(.failure(.deserialization(error))) }
                     }
                 } else {
-                    DispatchQueue.main.async { completion(nil, .remote(statusCode)) }
+                    DispatchQueue.main.async { completion(.failure(.remote(statusCode))) }
                 }
             }
 

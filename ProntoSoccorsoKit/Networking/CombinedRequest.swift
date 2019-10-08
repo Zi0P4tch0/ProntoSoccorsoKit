@@ -27,18 +27,20 @@ final class CombinedRequest {
 
 extension CombinedRequest: Request {
 
-    func fetch(with completion: @escaping ([HealthInstitute]?, RequestError?) -> Void) {
-        one.fetch { oneResults, oneError in
-            guard let oneResults = oneResults else {
-                completion(nil, oneError!)
-                return
-            }
-            self.two.fetch { twoResults, twoError in
-                guard let twoResults = twoResults else {
-                    completion(nil, twoError!)
-                    return
+    func fetch(with completion: @escaping (Result<[HealthInstitute], RequestError>) -> Void) {
+        one.fetch { oneResult in
+            switch oneResult {
+            case let .success(oneInstitutes):
+                self.two.fetch { twoResult in
+                    switch twoResult {
+                    case let .success(twoInstitutes):
+                        completion(.success(oneInstitutes + twoInstitutes))
+                    case let .failure(twoError):
+                        completion(.failure(twoError))
+                    }
                 }
-                completion(oneResults + twoResults, nil)
+            case let .failure(oneError):
+                completion(.failure(oneError))
             }
         }
     }

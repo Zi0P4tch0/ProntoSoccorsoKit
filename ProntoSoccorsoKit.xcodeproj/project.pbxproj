@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		951E5986234A4E8D00F44D06 /* ProntoSoccorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */; };
+		951E598D234A4E9E00F44D06 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E598C234A4E9E00F44D06 /* Region.swift */; };
+		951E5992234A4F0800F44D06 /* Lazio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5991234A4F0800F44D06 /* Lazio.swift */; };
+		951E5995234A4FDF00F44D06 /* HealthInstitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5994234A4FDF00F44D06 /* HealthInstitute.swift */; };
+		951E5998234A552100F44D06 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5997234A552100F44D06 /* Provider.swift */; };
+		951E599A234A554500F44D06 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5999234A554500F44D06 /* Request.swift */; };
+		951E59A7234A636A00F44D06 /* libProntoSoccorsoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */; };
+		951E59CB234B141300F44D06 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 951E59CA234B141300F44D06 /* SwiftSoup */; };
+		951E59D1234B155900F44D06 /* Taranto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D0234B155900F44D06 /* Taranto.swift */; };
+		951E59D3234B21AB00F44D06 /* RegioneLazioProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D2234B21AB00F44D06 /* RegioneLazioProviderTests.swift */; };
+		951E59D5234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D4234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift */; };
+		951E59D8234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */; };
+		9533FD4F234C569400593CE5 /* InstituteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD4E234C569400593CE5 /* InstituteListView.swift */; };
+		9533FD51234C5A4700593CE5 /* InstituteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD50234C5A4700593CE5 /* InstituteView.swift */; };
+		9533FD53234C5BFE00593CE5 /* TriageDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD52234C5BFE00593CE5 /* TriageDataView.swift */; };
+		9533FD56234C6ABA00593CE5 /* Trento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD55234C6ABA00593CE5 /* Trento.swift */; };
+		9533FD58234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */; };
+		953D3CA3234BC07000D86E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA2234BC07000D86E43 /* AppDelegate.swift */; };
+		953D3CA5234BC07000D86E43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA4234BC07000D86E43 /* SceneDelegate.swift */; };
+		953D3CA7234BC07000D86E43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA6234BC07000D86E43 /* ContentView.swift */; };
+		953D3CA9234BC07100D86E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CA8234BC07100D86E43 /* Assets.xcassets */; };
+		953D3CAC234BC07100D86E43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CAB234BC07100D86E43 /* Preview Assets.xcassets */; };
+		953D3CAF234BC07100D86E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CAD234BC07100D86E43 /* LaunchScreen.storyboard */; };
+		953D3CB6234BC0D300D86E43 /* libProntoSoccorsoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */; };
+		953D3CBD234BE94400D86E43 /* ValtellinaEAltoLario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CBC234BE94400D86E43 /* ValtellinaEAltoLario.swift */; };
+		95908F08234B620D009B091F /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F07234B620D009B091F /* Scraper.swift */; };
+		95908F0A234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F09234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift */; };
+		95908F13234B8E1B009B091F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F12234B8E1B009B091F /* Helpers.swift */; };
+		95A48504234C4D54000FE936 /* RegioneLombardiaValtellinaEAltoLarioProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A48503234C4D54000FE936 /* RegioneLombardiaValtellinaEAltoLarioProviderTests.swift */; };
+		95A48506234C514C000FE936 /* CombinedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A48505234C514C000FE936 /* CombinedRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		951E59A8234A636A00F44D06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 951E597A234A4E8D00F44D06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 951E5981234A4E8D00F44D06;
+			remoteInfo = ProntoSoccorsoKit;
+		};
+		953D3CB4234BC0CD00D86E43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 951E597A234A4E8D00F44D06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 951E5981234A4E8D00F44D06;
+			remoteInfo = ProntoSoccorsoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		951E5980234A4E8D00F44D06 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProntoSoccorsoKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProntoSoccorso.swift; sourceTree = "<group>"; };
+		951E598C234A4E9E00F44D06 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		951E5991234A4F0800F44D06 /* Lazio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazio.swift; sourceTree = "<group>"; };
+		951E5994234A4FDF00F44D06 /* HealthInstitute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInstitute.swift; sourceTree = "<group>"; };
+		951E5997234A552100F44D06 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		951E5999234A554500F44D06 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		951E59A2234A636A00F44D06 /* ProntoSoccorsoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoSoccorsoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		951E59A6234A636A00F44D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951E59D0234B155900F44D06 /* Taranto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taranto.swift; sourceTree = "<group>"; };
+		951E59D2234B21AB00F44D06 /* RegioneLazioProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneLazioProviderTests.swift; sourceTree = "<group>"; };
+		951E59D4234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionePugliaTarantoProviderTests.swift; sourceTree = "<group>"; };
+		951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriuliVeneziaGiulia.swift; sourceTree = "<group>"; };
+		9533FD4E234C569400593CE5 /* InstituteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListView.swift; sourceTree = "<group>"; };
+		9533FD50234C5A4700593CE5 /* InstituteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteView.swift; sourceTree = "<group>"; };
+		9533FD52234C5BFE00593CE5 /* TriageDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageDataView.swift; sourceTree = "<group>"; };
+		9533FD55234C6ABA00593CE5 /* Trento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trento.swift; sourceTree = "<group>"; };
+		9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneTrentinoAltoAdigeTrentoProviderTests.swift; sourceTree = "<group>"; };
+		953D3CA0234BC07000D86E43 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		953D3CA2234BC07000D86E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		953D3CA4234BC07000D86E43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		953D3CA6234BC07000D86E43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		953D3CA8234BC07100D86E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		953D3CAB234BC07100D86E43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		953D3CAE234BC07100D86E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		953D3CB0234BC07100D86E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		953D3CBC234BE94400D86E43 /* ValtellinaEAltoLario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValtellinaEAltoLario.swift; sourceTree = "<group>"; };
+		95908EF2234B5ED3009B091F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
+		95908EF4234B5F2E009B091F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.2.tbd; sourceTree = DEVELOPER_DIR; };
+		95908F07234B620D009B091F /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
+		95908F09234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneFriuliVeneziaGiuliaProviderTests.swift; sourceTree = "<group>"; };
+		95908F12234B8E1B009B091F /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		95A48503234C4D54000FE936 /* RegioneLombardiaValtellinaEAltoLarioProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneLombardiaValtellinaEAltoLarioProviderTests.swift; sourceTree = "<group>"; };
+		95A48505234C514C000FE936 /* CombinedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		951E597F234A4E8D00F44D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951E59CB234B141300F44D06 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951E599F234A636A00F44D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951E59A7234A636A00F44D06 /* libProntoSoccorsoKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953D3C9D234BC07000D86E43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953D3CB6234BC0D300D86E43 /* libProntoSoccorsoKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		951E5979234A4E8D00F44D06 = {
+			isa = PBXGroup;
+			children = (
+				951E5984234A4E8D00F44D06 /* ProntoSoccorsoKit */,
+				951E59A3234A636A00F44D06 /* ProntoSoccorsoKitTests */,
+				953D3CA1234BC07000D86E43 /* DemoApp */,
+				951E5983234A4E8D00F44D06 /* Products */,
+				951E59C7234A955400F44D06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		951E5983234A4E8D00F44D06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */,
+				951E59A2234A636A00F44D06 /* ProntoSoccorsoKitTests.xctest */,
+				953D3CA0234BC07000D86E43 /* DemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		951E5984234A4E8D00F44D06 /* ProntoSoccorsoKit */ = {
+			isa = PBXGroup;
+			children = (
+				951E598C234A4E9E00F44D06 /* Region.swift */,
+				951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */,
+				951E5993234A4FD600F44D06 /* Data Model */,
+				951E598F234A4EC500F44D06 /* Providers */,
+				951E598E234A4EB500F44D06 /* Networking */,
+			);
+			path = ProntoSoccorsoKit;
+			sourceTree = "<group>";
+		};
+		951E598E234A4EB500F44D06 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				951E5999234A554500F44D06 /* Request.swift */,
+				95A48505234C514C000FE936 /* CombinedRequest.swift */,
+				95908F07234B620D009B091F /* Scraper.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		951E598F234A4EC500F44D06 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				951E5997234A552100F44D06 /* Provider.swift */,
+				95908F12234B8E1B009B091F /* Helpers.swift */,
+				951E59D6234B3D4400F44D06 /* Friuli-Venezia Giulia */,
+				951E5990234A4EC900F44D06 /* Lazio */,
+				953D3CBA234BE91E00D86E43 /* Lombardia */,
+				951E59CE234B154500F44D06 /* Puglia */,
+				9533FD54234C6A9100593CE5 /* Trentino-Alto Adige */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		951E5990234A4EC900F44D06 /* Lazio */ = {
+			isa = PBXGroup;
+			children = (
+				951E5991234A4F0800F44D06 /* Lazio.swift */,
+			);
+			path = Lazio;
+			sourceTree = "<group>";
+		};
+		951E5993234A4FD600F44D06 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				951E5994234A4FDF00F44D06 /* HealthInstitute.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		951E59A3234A636A00F44D06 /* ProntoSoccorsoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				951E59A6234A636A00F44D06 /* Info.plist */,
+				951E59D2234B21AB00F44D06 /* RegioneLazioProviderTests.swift */,
+				951E59D4234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift */,
+				95908F09234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift */,
+				95A48503234C4D54000FE936 /* RegioneLombardiaValtellinaEAltoLarioProviderTests.swift */,
+				9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */,
+			);
+			path = ProntoSoccorsoKitTests;
+			sourceTree = "<group>";
+		};
+		951E59C7234A955400F44D06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95908EF4234B5F2E009B091F /* libxml2.2.tbd */,
+				95908EF2234B5ED3009B091F /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		951E59CE234B154500F44D06 /* Puglia */ = {
+			isa = PBXGroup;
+			children = (
+				951E59D0234B155900F44D06 /* Taranto.swift */,
+			);
+			path = Puglia;
+			sourceTree = "<group>";
+		};
+		951E59D6234B3D4400F44D06 /* Friuli-Venezia Giulia */ = {
+			isa = PBXGroup;
+			children = (
+				951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */,
+			);
+			path = "Friuli-Venezia Giulia";
+			sourceTree = "<group>";
+		};
+		9533FD54234C6A9100593CE5 /* Trentino-Alto Adige */ = {
+			isa = PBXGroup;
+			children = (
+				9533FD55234C6ABA00593CE5 /* Trento.swift */,
+			);
+			path = "Trentino-Alto Adige";
+			sourceTree = "<group>";
+		};
+		953D3CA1234BC07000D86E43 /* DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				953D3CA2234BC07000D86E43 /* AppDelegate.swift */,
+				953D3CA4234BC07000D86E43 /* SceneDelegate.swift */,
+				95A48507234C5508000FE936 /* Views */,
+				953D3CA8234BC07100D86E43 /* Assets.xcassets */,
+				953D3CAD234BC07100D86E43 /* LaunchScreen.storyboard */,
+				953D3CB0234BC07100D86E43 /* Info.plist */,
+				953D3CAA234BC07100D86E43 /* Preview Content */,
+			);
+			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		953D3CAA234BC07100D86E43 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				953D3CAB234BC07100D86E43 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		953D3CBA234BE91E00D86E43 /* Lombardia */ = {
+			isa = PBXGroup;
+			children = (
+				953D3CBC234BE94400D86E43 /* ValtellinaEAltoLario.swift */,
+			);
+			path = Lombardia;
+			sourceTree = "<group>";
+		};
+		95A48507234C5508000FE936 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				953D3CA6234BC07000D86E43 /* ContentView.swift */,
+				9533FD4E234C569400593CE5 /* InstituteListView.swift */,
+				9533FD50234C5A4700593CE5 /* InstituteView.swift */,
+				9533FD52234C5BFE00593CE5 /* TriageDataView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951E5989234A4E8D00F44D06 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKit" */;
+			buildPhases = (
+				951E597E234A4E8D00F44D06 /* Sources */,
+				951E597F234A4E8D00F44D06 /* Frameworks */,
+				951E5980234A4E8D00F44D06 /* CopyFiles */,
+				95B24626234A9232000EC3E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				951E59CD234B142200F44D06 /* PBXTargetDependency */,
+			);
+			name = ProntoSoccorsoKit;
+			packageProductDependencies = (
+				951E59CA234B141300F44D06 /* SwiftSoup */,
+			);
+			productName = ProntoSoccorsoKit;
+			productReference = 951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		951E59A1234A636A00F44D06 /* ProntoSoccorsoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951E59AA234A636A00F44D06 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKitTests" */;
+			buildPhases = (
+				951E599E234A636A00F44D06 /* Sources */,
+				951E599F234A636A00F44D06 /* Frameworks */,
+				951E59A0234A636A00F44D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				951E59A9234A636A00F44D06 /* PBXTargetDependency */,
+			);
+			name = ProntoSoccorsoKitTests;
+			productName = ProntoSoccorsoKitTests;
+			productReference = 951E59A2234A636A00F44D06 /* ProntoSoccorsoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		953D3C9F234BC07000D86E43 /* DemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953D3CB1234BC07100D86E43 /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildPhases = (
+				953D3C9C234BC07000D86E43 /* Sources */,
+				953D3C9D234BC07000D86E43 /* Frameworks */,
+				953D3C9E234BC07000D86E43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				953D3CB5234BC0CD00D86E43 /* PBXTargetDependency */,
+			);
+			name = DemoApp;
+			productName = DemoApp;
+			productReference = 953D3CA0234BC07000D86E43 /* DemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		951E597A234A4E8D00F44D06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Matteo Pacini";
+				TargetAttributes = {
+					951E5981234A4E8D00F44D06 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					951E59A1234A636A00F44D06 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					953D3C9F234BC07000D86E43 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 951E597D234A4E8D00F44D06 /* Build configuration list for PBXProject "ProntoSoccorsoKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 951E5979234A4E8D00F44D06;
+			packageReferences = (
+				951E59C9234B141300F44D06 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+			productRefGroup = 951E5983234A4E8D00F44D06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */,
+				951E59A1234A636A00F44D06 /* ProntoSoccorsoKitTests */,
+				953D3C9F234BC07000D86E43 /* DemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		951E59A0234A636A00F44D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953D3C9E234BC07000D86E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953D3CAF234BC07100D86E43 /* LaunchScreen.storyboard in Resources */,
+				953D3CAC234BC07100D86E43 /* Preview Assets.xcassets in Resources */,
+				953D3CA9234BC07100D86E43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B24626234A9232000EC3E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		951E597E234A4E8D00F44D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951E59D8234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift in Sources */,
+				9533FD56234C6ABA00593CE5 /* Trento.swift in Sources */,
+				951E599A234A554500F44D06 /* Request.swift in Sources */,
+				951E5986234A4E8D00F44D06 /* ProntoSoccorso.swift in Sources */,
+				953D3CBD234BE94400D86E43 /* ValtellinaEAltoLario.swift in Sources */,
+				95908F13234B8E1B009B091F /* Helpers.swift in Sources */,
+				951E59D1234B155900F44D06 /* Taranto.swift in Sources */,
+				951E5992234A4F0800F44D06 /* Lazio.swift in Sources */,
+				951E5995234A4FDF00F44D06 /* HealthInstitute.swift in Sources */,
+				951E5998234A552100F44D06 /* Provider.swift in Sources */,
+				951E598D234A4E9E00F44D06 /* Region.swift in Sources */,
+				95908F08234B620D009B091F /* Scraper.swift in Sources */,
+				95A48506234C514C000FE936 /* CombinedRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951E599E234A636A00F44D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9533FD58234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift in Sources */,
+				95A48504234C4D54000FE936 /* RegioneLombardiaValtellinaEAltoLarioProviderTests.swift in Sources */,
+				951E59D5234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift in Sources */,
+				95908F0A234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift in Sources */,
+				951E59D3234B21AB00F44D06 /* RegioneLazioProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953D3C9C234BC07000D86E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9533FD51234C5A4700593CE5 /* InstituteView.swift in Sources */,
+				953D3CA3234BC07000D86E43 /* AppDelegate.swift in Sources */,
+				9533FD53234C5BFE00593CE5 /* TriageDataView.swift in Sources */,
+				953D3CA5234BC07000D86E43 /* SceneDelegate.swift in Sources */,
+				9533FD4F234C569400593CE5 /* InstituteListView.swift in Sources */,
+				953D3CA7234BC07000D86E43 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		951E59A9234A636A00F44D06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */;
+			targetProxy = 951E59A8234A636A00F44D06 /* PBXContainerItemProxy */;
+		};
+		951E59CD234B142200F44D06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			productRef = 951E59CC234B142200F44D06 /* SwiftSoup */;
+		};
+		953D3CB5234BC0CD00D86E43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */;
+			targetProxy = 953D3CB4234BC0CD00D86E43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		953D3CAD234BC07100D86E43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				953D3CAE234BC07100D86E43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		951E5987234A4E8D00F44D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		951E5988234A4E8D00F44D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		951E598A234A4E8D00F44D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		951E598B234A4E8D00F44D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		951E59AB234A636A00F44D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				INFOPLIST_FILE = ProntoSoccorsoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.codecraft.ProntoSoccorsoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		951E59AC234A636A00F44D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				INFOPLIST_FILE = ProntoSoccorsoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.codecraft.ProntoSoccorsoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		953D3CB2234BC07100D86E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = it.codecraft.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		953D3CB3234BC07100D86E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = it.codecraft.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		951E597D234A4E8D00F44D06 /* Build configuration list for PBXProject "ProntoSoccorsoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951E5987234A4E8D00F44D06 /* Debug */,
+				951E5988234A4E8D00F44D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951E5989234A4E8D00F44D06 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951E598A234A4E8D00F44D06 /* Debug */,
+				951E598B234A4E8D00F44D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951E59AA234A636A00F44D06 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951E59AB234A636A00F44D06 /* Debug */,
+				951E59AC234A636A00F44D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		953D3CB1234BC07100D86E43 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953D3CB2234BC07100D86E43 /* Debug */,
+				953D3CB3234BC07100D86E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		951E59C9234B141300F44D06 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		951E59CA234B141300F44D06 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 951E59C9234B141300F44D06 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		951E59CC234B142200F44D06 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 951E59C9234B141300F44D06 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 951E597A234A4E8D00F44D06 /* Project object */;
+}

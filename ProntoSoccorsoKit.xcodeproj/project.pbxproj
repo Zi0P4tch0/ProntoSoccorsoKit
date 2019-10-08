@@ -32,6 +32,7 @@
 		953D3CAF234BC07100D86E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CAD234BC07100D86E43 /* LaunchScreen.storyboard */; };
 		953D3CB6234BC0D300D86E43 /* libProntoSoccorsoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */; };
 		953D3CBD234BE94400D86E43 /* ValtellinaEAltoLario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CBC234BE94400D86E43 /* ValtellinaEAltoLario.swift */; };
+		954C0A15234D172100F90B52 /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C0A14234D172100F90B52 /* DemoAppUITests.swift */; };
 		95908F08234B620D009B091F /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F07234B620D009B091F /* Scraper.swift */; };
 		95908F0A234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F09234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift */; };
 		95908F13234B8E1B009B091F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F12234B8E1B009B091F /* Helpers.swift */; };
@@ -53,6 +54,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 951E5981234A4E8D00F44D06;
 			remoteInfo = ProntoSoccorsoKit;
+		};
+		954C0A17234D172100F90B52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 951E597A234A4E8D00F44D06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 953D3C9F234BC07000D86E43;
+			remoteInfo = DemoApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -96,6 +104,9 @@
 		953D3CAE234BC07100D86E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		953D3CB0234BC07100D86E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		953D3CBC234BE94400D86E43 /* ValtellinaEAltoLario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValtellinaEAltoLario.swift; sourceTree = "<group>"; };
+		954C0A12234D172100F90B52 /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		954C0A14234D172100F90B52 /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
+		954C0A16234D172100F90B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95908EF2234B5ED3009B091F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		95908EF4234B5F2E009B091F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.2.tbd; sourceTree = DEVELOPER_DIR; };
 		95908F07234B620D009B091F /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
@@ -130,6 +141,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		954C0A0F234D172100F90B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -139,6 +157,7 @@
 				951E5984234A4E8D00F44D06 /* ProntoSoccorsoKit */,
 				951E59A3234A636A00F44D06 /* ProntoSoccorsoKitTests */,
 				953D3CA1234BC07000D86E43 /* DemoApp */,
+				954C0A13234D172100F90B52 /* DemoAppUITests */,
 				951E5983234A4E8D00F44D06 /* Products */,
 				951E59C7234A955400F44D06 /* Frameworks */,
 			);
@@ -150,6 +169,7 @@
 				951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */,
 				951E59A2234A636A00F44D06 /* ProntoSoccorsoKitTests.xctest */,
 				953D3CA0234BC07000D86E43 /* DemoApp.app */,
+				954C0A12234D172100F90B52 /* DemoAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,6 +302,15 @@
 			path = Lombardia;
 			sourceTree = "<group>";
 		};
+		954C0A13234D172100F90B52 /* DemoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				954C0A14234D172100F90B52 /* DemoAppUITests.swift */,
+				954C0A16234D172100F90B52 /* Info.plist */,
+			);
+			path = DemoAppUITests;
+			sourceTree = "<group>";
+		};
 		95A48507234C5508000FE936 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +383,24 @@
 			productReference = 953D3CA0234BC07000D86E43 /* DemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		954C0A11234D172100F90B52 /* DemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954C0A19234D172100F90B52 /* Build configuration list for PBXNativeTarget "DemoAppUITests" */;
+			buildPhases = (
+				954C0A0E234D172100F90B52 /* Sources */,
+				954C0A0F234D172100F90B52 /* Frameworks */,
+				954C0A10234D172100F90B52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				954C0A18234D172100F90B52 /* PBXTargetDependency */,
+			);
+			name = DemoAppUITests;
+			productName = DemoAppUITests;
+			productReference = 954C0A12234D172100F90B52 /* DemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -374,6 +421,10 @@
 					};
 					953D3C9F234BC07000D86E43 = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					954C0A11234D172100F90B52 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 953D3C9F234BC07000D86E43;
 					};
 				};
 			};
@@ -396,6 +447,7 @@
 				951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */,
 				951E59A1234A636A00F44D06 /* ProntoSoccorsoKitTests */,
 				953D3C9F234BC07000D86E43 /* DemoApp */,
+				954C0A11234D172100F90B52 /* DemoAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -415,6 +467,13 @@
 				953D3CAF234BC07100D86E43 /* LaunchScreen.storyboard in Resources */,
 				953D3CAC234BC07100D86E43 /* Preview Assets.xcassets in Resources */,
 				953D3CA9234BC07100D86E43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954C0A10234D172100F90B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +532,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		954C0A0E234D172100F90B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954C0A15234D172100F90B52 /* DemoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -490,6 +557,11 @@
 			isa = PBXTargetDependency;
 			target = 951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */;
 			targetProxy = 953D3CB4234BC0CD00D86E43 /* PBXContainerItemProxy */;
+		};
+		954C0A18234D172100F90B52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 953D3C9F234BC07000D86E43 /* DemoApp */;
+			targetProxy = 954C0A17234D172100F90B52 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -743,6 +815,42 @@
 			};
 			name = Release;
 		};
+		954C0A1A234D172100F90B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.codecraft.DemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoApp;
+			};
+			name = Debug;
+		};
+		954C0A1B234D172100F90B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.codecraft.DemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -778,6 +886,15 @@
 			buildConfigurations = (
 				953D3CB2234BC07100D86E43 /* Debug */,
 				953D3CB3234BC07100D86E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		954C0A19234D172100F90B52 /* Build configuration list for PBXNativeTarget "DemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954C0A1A234D172100F90B52 /* Debug */,
+				954C0A1B234D172100F90B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

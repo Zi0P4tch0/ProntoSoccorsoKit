@@ -19,20 +19,27 @@
 		951E59D3234B21AB00F44D06 /* RegioneLazioProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D2234B21AB00F44D06 /* RegioneLazioProviderTests.swift */; };
 		951E59D5234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D4234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift */; };
 		951E59D8234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */; };
-		9533FD4F234C569400593CE5 /* InstituteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD4E234C569400593CE5 /* InstituteListView.swift */; };
-		9533FD51234C5A4700593CE5 /* InstituteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD50234C5A4700593CE5 /* InstituteView.swift */; };
-		9533FD53234C5BFE00593CE5 /* TriageDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD52234C5BFE00593CE5 /* TriageDataView.swift */; };
 		9533FD56234C6ABA00593CE5 /* Trento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD55234C6ABA00593CE5 /* Trento.swift */; };
 		9533FD58234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */; };
 		953D3CA3234BC07000D86E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA2234BC07000D86E43 /* AppDelegate.swift */; };
 		953D3CA5234BC07000D86E43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA4234BC07000D86E43 /* SceneDelegate.swift */; };
-		953D3CA7234BC07000D86E43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA6234BC07000D86E43 /* ContentView.swift */; };
 		953D3CA9234BC07100D86E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CA8234BC07100D86E43 /* Assets.xcassets */; };
 		953D3CAC234BC07100D86E43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CAB234BC07100D86E43 /* Preview Assets.xcassets */; };
 		953D3CAF234BC07100D86E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CAD234BC07100D86E43 /* LaunchScreen.storyboard */; };
 		953D3CB6234BC0D300D86E43 /* libProntoSoccorsoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */; };
 		953D3CBD234BE94400D86E43 /* ValtellinaEAltoLario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CBC234BE94400D86E43 /* ValtellinaEAltoLario.swift */; };
 		954C0A15234D172100F90B52 /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C0A14234D172100F90B52 /* DemoAppUITests.swift */; };
+		956327B7234E82BF004DE189 /* RegionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B0234E82BF004DE189 /* RegionListPresenter.swift */; };
+		956327B8234E82BF004DE189 /* RegionListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B1234E82BF004DE189 /* RegionListRouter.swift */; };
+		956327B9234E82BF004DE189 /* RegionListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B2234E82BF004DE189 /* RegionListContracts.swift */; };
+		956327BA234E82BF004DE189 /* RegionListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B3234E82BF004DE189 /* RegionListModels.swift */; };
+		956327BB234E82BF004DE189 /* RegionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B4234E82BF004DE189 /* RegionListViewController.swift */; };
+		956327BC234E82BF004DE189 /* RegionListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B5234E82BF004DE189 /* RegionListInteractor.swift */; };
+		956327BD234E82BF004DE189 /* RegionListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B6234E82BF004DE189 /* RegionListConfigurator.swift */; };
+		956327BF234E8320004DE189 /* RegionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956327BE234E8320004DE189 /* RegionListViewController.xib */; };
+		956327C2234E83E6004DE189 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327C1234E83E6004DE189 /* TableViewDataSource.swift */; };
+		956327C5234E85DC004DE189 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327C4234E85DC004DE189 /* LabelTableViewCell.swift */; };
+		956327C7234E8675004DE189 /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956327C6234E8675004DE189 /* LabelTableViewCell.xib */; };
 		95908F08234B620D009B091F /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F07234B620D009B091F /* Scraper.swift */; };
 		95908F0A234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F09234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift */; };
 		95908F13234B8E1B009B091F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F12234B8E1B009B091F /* Helpers.swift */; };
@@ -90,15 +97,11 @@
 		951E59D2234B21AB00F44D06 /* RegioneLazioProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneLazioProviderTests.swift; sourceTree = "<group>"; };
 		951E59D4234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionePugliaTarantoProviderTests.swift; sourceTree = "<group>"; };
 		951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriuliVeneziaGiulia.swift; sourceTree = "<group>"; };
-		9533FD4E234C569400593CE5 /* InstituteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListView.swift; sourceTree = "<group>"; };
-		9533FD50234C5A4700593CE5 /* InstituteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteView.swift; sourceTree = "<group>"; };
-		9533FD52234C5BFE00593CE5 /* TriageDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageDataView.swift; sourceTree = "<group>"; };
 		9533FD55234C6ABA00593CE5 /* Trento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trento.swift; sourceTree = "<group>"; };
 		9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneTrentinoAltoAdigeTrentoProviderTests.swift; sourceTree = "<group>"; };
 		953D3CA0234BC07000D86E43 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953D3CA2234BC07000D86E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953D3CA4234BC07000D86E43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		953D3CA6234BC07000D86E43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		953D3CA8234BC07100D86E43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953D3CAB234BC07100D86E43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		953D3CAE234BC07100D86E43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,6 +110,17 @@
 		954C0A12234D172100F90B52 /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954C0A14234D172100F90B52 /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
 		954C0A16234D172100F90B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956327B0234E82BF004DE189 /* RegionListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListPresenter.swift; sourceTree = "<group>"; };
+		956327B1234E82BF004DE189 /* RegionListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListRouter.swift; sourceTree = "<group>"; };
+		956327B2234E82BF004DE189 /* RegionListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListContracts.swift; sourceTree = "<group>"; };
+		956327B3234E82BF004DE189 /* RegionListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListModels.swift; sourceTree = "<group>"; };
+		956327B4234E82BF004DE189 /* RegionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListViewController.swift; sourceTree = "<group>"; };
+		956327B5234E82BF004DE189 /* RegionListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListInteractor.swift; sourceTree = "<group>"; };
+		956327B6234E82BF004DE189 /* RegionListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListConfigurator.swift; sourceTree = "<group>"; };
+		956327BE234E8320004DE189 /* RegionListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionListViewController.xib; sourceTree = "<group>"; };
+		956327C1234E83E6004DE189 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		956327C4234E85DC004DE189 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		956327C6234E8675004DE189 /* LabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
 		95908EF2234B5ED3009B091F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		95908EF4234B5F2E009B091F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.2.tbd; sourceTree = DEVELOPER_DIR; };
 		95908F07234B620D009B091F /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
@@ -275,9 +289,10 @@
 		953D3CA1234BC07000D86E43 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				956327C0234E83CE004DE189 /* Reusable Components */,
+				956327AF234E82AB004DE189 /* Screens */,
 				953D3CA2234BC07000D86E43 /* AppDelegate.swift */,
 				953D3CA4234BC07000D86E43 /* SceneDelegate.swift */,
-				95A48507234C5508000FE936 /* Views */,
 				953D3CA8234BC07100D86E43 /* Assets.xcassets */,
 				953D3CAD234BC07100D86E43 /* LaunchScreen.storyboard */,
 				953D3CB0234BC07100D86E43 /* Info.plist */,
@@ -311,15 +326,45 @@
 			path = DemoAppUITests;
 			sourceTree = "<group>";
 		};
-		95A48507234C5508000FE936 /* Views */ = {
+		956327AE234E8298004DE189 /* RegionList */ = {
 			isa = PBXGroup;
 			children = (
-				953D3CA6234BC07000D86E43 /* ContentView.swift */,
-				9533FD4E234C569400593CE5 /* InstituteListView.swift */,
-				9533FD50234C5A4700593CE5 /* InstituteView.swift */,
-				9533FD52234C5BFE00593CE5 /* TriageDataView.swift */,
+				956327B3234E82BF004DE189 /* RegionListModels.swift */,
+				956327B2234E82BF004DE189 /* RegionListContracts.swift */,
+				956327B1234E82BF004DE189 /* RegionListRouter.swift */,
+				956327B5234E82BF004DE189 /* RegionListInteractor.swift */,
+				956327B0234E82BF004DE189 /* RegionListPresenter.swift */,
+				956327B4234E82BF004DE189 /* RegionListViewController.swift */,
+				956327BE234E8320004DE189 /* RegionListViewController.xib */,
+				956327B6234E82BF004DE189 /* RegionListConfigurator.swift */,
 			);
-			path = Views;
+			path = RegionList;
+			sourceTree = "<group>";
+		};
+		956327AF234E82AB004DE189 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				956327AE234E8298004DE189 /* RegionList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		956327C0234E83CE004DE189 /* Reusable Components */ = {
+			isa = PBXGroup;
+			children = (
+				956327C3234E85C6004DE189 /* Cells */,
+				956327C1234E83E6004DE189 /* TableViewDataSource.swift */,
+			);
+			path = "Reusable Components";
+			sourceTree = "<group>";
+		};
+		956327C3234E85C6004DE189 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				956327C4234E85DC004DE189 /* LabelTableViewCell.swift */,
+				956327C6234E8675004DE189 /* LabelTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +509,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				956327BF234E8320004DE189 /* RegionListViewController.xib in Resources */,
+				956327C7234E8675004DE189 /* LabelTableViewCell.xib in Resources */,
 				953D3CAF234BC07100D86E43 /* LaunchScreen.storyboard in Resources */,
 				953D3CAC234BC07100D86E43 /* Preview Assets.xcassets in Resources */,
 				953D3CA9234BC07100D86E43 /* Assets.xcassets in Resources */,
@@ -523,12 +570,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9533FD51234C5A4700593CE5 /* InstituteView.swift in Sources */,
+				956327BC234E82BF004DE189 /* RegionListInteractor.swift in Sources */,
+				956327BD234E82BF004DE189 /* RegionListConfigurator.swift in Sources */,
+				956327BB234E82BF004DE189 /* RegionListViewController.swift in Sources */,
 				953D3CA3234BC07000D86E43 /* AppDelegate.swift in Sources */,
-				9533FD53234C5BFE00593CE5 /* TriageDataView.swift in Sources */,
+				956327BA234E82BF004DE189 /* RegionListModels.swift in Sources */,
+				956327C5234E85DC004DE189 /* LabelTableViewCell.swift in Sources */,
+				956327B9234E82BF004DE189 /* RegionListContracts.swift in Sources */,
+				956327C2234E83E6004DE189 /* TableViewDataSource.swift in Sources */,
 				953D3CA5234BC07000D86E43 /* SceneDelegate.swift in Sources */,
-				9533FD4F234C569400593CE5 /* InstituteListView.swift in Sources */,
-				953D3CA7234BC07000D86E43 /* ContentView.swift in Sources */,
+				956327B8234E82BF004DE189 /* RegionListRouter.swift in Sources */,
+				956327B7234E82BF004DE189 /* RegionListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

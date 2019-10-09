@@ -1,18 +1,6 @@
 
 import Foundation
 
-extension Array where Element == Request {
-
-    func combine() -> Request? {
-        guard !isEmpty else { return nil }
-        guard count > 1 else { return first }
-        return reduce(first!, { one, two in
-            CombinedRequest(one: one, two: two)
-        })
-    }
-
-}
-
 final class CombinedRequest {
 
     private let one: Request
@@ -25,6 +13,7 @@ final class CombinedRequest {
 
 }
 
+// MARK: Request
 extension CombinedRequest: Request {
 
     func fetch(with completion: @escaping (Result<[HealthInstitute], RequestError>) -> Void) {

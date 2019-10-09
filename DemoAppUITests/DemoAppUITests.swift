@@ -12,43 +12,46 @@ class DemoAppUITests: XCTestCase {
     }
 
     func test_lazio_still_works() {
-        app.buttons["Lazio"].tap()
-        let exp = expectation(for: NSPredicate(format: "exists = YES"),
-                              evaluatedWith: app.buttons["Policlinico Casilino"],
-                              handler: nil)
-        wait(for: [exp], timeout: 30)
+        tap("Lazio")
+        waitButton("Policlinico Casilino")
     }
 
     func test_friuli_venezia_giulia_still_works() {
-        app.buttons["Friuli-Venezia Giulia"].tap()
-        let exp = expectation(for: NSPredicate(format: "exists = YES"),
-                              evaluatedWith: app.buttons["Pronto Soccorso Gorizia"],
-                              handler: nil)
-        wait(for: [exp], timeout: 30)
+        tap("Friuli-Venezia Giulia")
+        waitButton("Pronto Soccorso Gorizia")
     }
 
     func test_lombardia_valtellina_alto_lario_still_works() {
-        app.buttons["Lombardia (Valtellina e Alto Lario)"].tap()
-        let exp = expectation(for: NSPredicate(format: "exists = YES"),
-                              evaluatedWith: app.buttons["Pronto soccorso di Sondalo"],
-                              handler: nil)
-        wait(for: [exp], timeout: 30)
+        tap("Lombardia (Valtellina e Alto Lario)")
+        waitButton("Pronto soccorso di Sondalo")
     }
 
     func test_puglia_taranto_still_works() {
-        app.buttons["Puglia (Taranto)"].tap()
-        let exp = expectation(for: NSPredicate(format: "exists = YES"),
-                              evaluatedWith: app.buttons["MANDURIA"],
-                              handler: nil)
-        wait(for: [exp], timeout: 30)
+        tap("Puglia (Taranto)")
+        waitButton("MANDURIA")
     }
 
     func test_trentino_alto_adige_trento_still_works() {
-        app.buttons["Trentino-Alto Adige (Trento)"].tap()
+        tap("Trentino-Alto Adige (Trento)")
+        waitButton("Ospedale di Trento - Pronto Soccorso")
+    }
+
+}
+
+
+// MARK: Utilities
+
+extension DemoAppUITests {
+
+    func tap(_ button: String) {
+        app.buttons[button].tap()
+    }
+
+    func waitButton(_ value: String, timeout: TimeInterval = 30) {
         let exp = expectation(for: NSPredicate(format: "exists = YES"),
-                              evaluatedWith: app.buttons["Ospedale di Trento - Pronto Soccorso"],
+                              evaluatedWith: app.buttons[value],
                               handler: nil)
-        wait(for: [exp], timeout: 30)
+        wait(for: [exp], timeout: timeout)
     }
 
 }

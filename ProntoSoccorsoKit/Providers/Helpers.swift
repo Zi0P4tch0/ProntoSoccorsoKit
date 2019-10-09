@@ -1,6 +1,7 @@
 
 import Foundation
 
+// MARK: Mapping Error
 struct MappingLocation {
     let file: String
     let function: String

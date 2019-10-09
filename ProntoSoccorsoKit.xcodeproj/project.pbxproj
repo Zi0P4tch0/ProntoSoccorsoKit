@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		951E5986234A4E8D00F44D06 /* ProntoSoccorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */; };
-		951E598D234A4E9E00F44D06 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E598C234A4E9E00F44D06 /* Region.swift */; };
+		951E598D234A4E9E00F44D06 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E598C234A4E9E00F44D06 /* Regions.swift */; };
 		951E5992234A4F0800F44D06 /* Lazio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5991234A4F0800F44D06 /* Lazio.swift */; };
 		951E5995234A4FDF00F44D06 /* HealthInstitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5994234A4FDF00F44D06 /* HealthInstitute.swift */; };
 		951E5998234A552100F44D06 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5997234A552100F44D06 /* Provider.swift */; };
@@ -79,7 +79,7 @@
 /* Begin PBXFileReference section */
 		951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProntoSoccorsoKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProntoSoccorso.swift; sourceTree = "<group>"; };
-		951E598C234A4E9E00F44D06 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		951E598C234A4E9E00F44D06 /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
 		951E5991234A4F0800F44D06 /* Lazio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazio.swift; sourceTree = "<group>"; };
 		951E5994234A4FDF00F44D06 /* HealthInstitute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInstitute.swift; sourceTree = "<group>"; };
 		951E5997234A552100F44D06 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		951E5984234A4E8D00F44D06 /* ProntoSoccorsoKit */ = {
 			isa = PBXGroup;
 			children = (
-				951E598C234A4E9E00F44D06 /* Region.swift */,
+				951E598C234A4E9E00F44D06 /* Regions.swift */,
 				951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */,
 				951E5993234A4FD600F44D06 /* Data Model */,
 				951E598F234A4EC500F44D06 /* Providers */,
@@ -501,7 +501,7 @@
 				951E5992234A4F0800F44D06 /* Lazio.swift in Sources */,
 				951E5995234A4FDF00F44D06 /* HealthInstitute.swift in Sources */,
 				951E5998234A552100F44D06 /* Provider.swift in Sources */,
-				951E598D234A4E9E00F44D06 /* Region.swift in Sources */,
+				951E598D234A4E9E00F44D06 /* Regions.swift in Sources */,
 				95908F08234B620D009B091F /* Scraper.swift in Sources */,
 				95A48506234C514C000FE936 /* CombinedRequest.swift in Sources */,
 			);

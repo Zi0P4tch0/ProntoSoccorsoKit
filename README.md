@@ -1,10 +1,10 @@
 # ProntoSoccorsoKit
 
+Artwork & demo app icon kindly provided by [Alessandro Vercellino](mailto:independentdesign@outlook.it).
+
 ## Usage
 
 ```swift
-//Fetches list of health institutes for Regione Lazio.
-
 ProntoSoccorso.region(.lazio).fetch { result in
     // Handle result
 }
@@ -28,17 +28,30 @@ ProntoSoccorso.regions([.lazio, .friuliVeneziaGiulia]).fetch { result in
 
 ## Scraping
 
-Most of the data is scraped from websites, hence loading times may vary.
+Most of the data is scraped from websites, hence fetching times may vary.
 
-## Installation
+Scraping is done by adding a hidden `WKWebView` behind all other views in the `keyWindow`.
+Once the web view finishes loading, the post-render HTML is then parsed with `SwiftSoup` and the data populated.
+
+# Demo App
+
+![app-icon](img/app-icon.png)
+
+A demo app is included to show the currently availble data, and how to fetch it.
+
+# Installation
 
 ```
 ```
 
-## Contribute
+## App Transport Security
+
+```
+```
+# Contribute
 
 ```
 ```
 
-## License
+# License
 

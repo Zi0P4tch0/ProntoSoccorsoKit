@@ -15,17 +15,19 @@ public enum Region {
     case trentinoAltoAdige(TrentinoAltoAdige)
 }
 
-/// Region of Puglia.
+/// Local health units of Regione Puglia.
 public enum Puglia {
     /// ASL Taranto.
     case taranto
 }
 
+/// Local health units of Regione Lombardia.
 public enum Lombardia {
     /// ASST Valtellina e Alto Lario
     case valtellinaEAltoLario
 }
 
+/// Local health units of Regione Trentino-Alto Adige.
 public enum TrentinoAltoAdige {
     /// APSS Trento
     case trento

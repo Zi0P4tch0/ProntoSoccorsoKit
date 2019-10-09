@@ -23,31 +23,31 @@ final class RegionePugliaTarantoProviderTests: XCTestCase {
                     <tr>
                         <td>Pazienti in attesa</td>
                         <td>
-                            <div>0</div>
+                            <div>1</div>
                         </td>
                         <td>
                             <div>6</div>
-                        </td>
-                        <td>
-                            <div>6</div>
-                        </td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Pazienti in visita</td>
-                        <td>
-                            <div>0</div>
-                        </td>
-                        <td>
-                            <div>9</div>
                         </td>
                         <td>
                             <div>7</div>
                         </td>
                         <td>
-                            <div>0</div>
+                            <div>9</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pazienti in visita</td>
+                        <td>
+                            <div>11</div>
+                        </td>
+                        <td>
+                            <div>12</div>
+                        </td>
+                        <td>
+                            <div>13</div>
+                        </td>
+                        <td>
+                            <div>14</div>
                         </td>
                     </tr>
                     <tr>
@@ -62,7 +62,7 @@ final class RegionePugliaTarantoProviderTests: XCTestCase {
                             <div>20</div>
                         </td>
                         <td>
-                            <div>0</div>
+                            <div>99</div>
                         </td>
                     </tr>
                     <tr>
@@ -92,17 +92,17 @@ final class RegionePugliaTarantoProviderTests: XCTestCase {
         XCTAssertEqual(result?.localHealthUnit, "ASL Taranto")
         XCTAssertEqual(result?.type, .generic)
 
-        XCTAssertEqual(result?.waiting.reds, 0)
+        XCTAssertEqual(result?.waiting.reds, 1)
         XCTAssertEqual(result?.waiting.yellows, 6)
-        XCTAssertEqual(result?.waiting.greens, 6)
-        XCTAssertEqual(result?.waiting.whites, 0)
+        XCTAssertEqual(result?.waiting.greens, 7)
+        XCTAssertEqual(result?.waiting.whites, 9)
         XCTAssertEqual(result?.waiting.unassigned, nil)
         XCTAssertEqual(result?.waiting.count, nil)
 
-        XCTAssertEqual(result?.inTreatment?.reds, 0)
-        XCTAssertEqual(result?.inTreatment?.yellows, 9)
-        XCTAssertEqual(result?.inTreatment?.greens, 7)
-        XCTAssertEqual(result?.inTreatment?.whites, 0)
+        XCTAssertEqual(result?.inTreatment?.reds, 11)
+        XCTAssertEqual(result?.inTreatment?.yellows, 12)
+        XCTAssertEqual(result?.inTreatment?.greens, 13)
+        XCTAssertEqual(result?.inTreatment?.whites, 14)
         XCTAssertEqual(result?.inTreatment?.unassigned, nil)
         XCTAssertEqual(result?.inTreatment?.count, nil)
 

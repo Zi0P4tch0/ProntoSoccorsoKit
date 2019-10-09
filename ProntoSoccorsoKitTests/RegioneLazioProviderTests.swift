@@ -10,39 +10,39 @@ final class RegioneLazioProviderTests: XCTestCase {
         sut = RegioneLazioProvider()
     }
 
-    func test_parsing() throws {
+    func json(instituteType: String = "PS") -> String {
 
         let institute = """
             {
                 "ASL": "RM5",
-                "BIANCHI_ATT": "0",
-                "BIANCHI_OB": "0",
-                "BIANCHI_TRATT": "0",
+                "BIANCHI_ATT": "7",
+                "BIANCHI_OB": "1",
+                "BIANCHI_TRATT": "73",
                 "CODICE": "5200",
                 "COMUNE": "Subiaco",
                 "DATA": "2019-07-10T09:23:00",
-                "GIALLI_ATT": "0",
-                "GIALLI_OB": "0",
-                "GIALLI_TRATT": "2",
+                "GIALLI_ATT": "23",
+                "GIALLI_OB": "1234",
+                "GIALLI_TRATT": "3",
                 "ISTITUTO": "A. Angelucci",
-                "NONESEG_ATT": "0",
-                "NONESEG_TRATT": "0",
-                "ROSSI_ATT": "0",
-                "ROSSI_OB": "0",
-                "ROSSI_TRATT": "0",
+                "NONESEG_ATT": "44",
+                "NONESEG_TRATT": "45",
+                "ROSSI_ATT": "67",
+                "ROSSI_OB": "69",
+                "ROSSI_TRATT": "2",
                 "STATO_IN_PS": "ATTESA",
                 "STATO_IN_PS1": "TRATTAMENTO",
                 "STATO_IN_PS2": "OSSERVAZIONE_BREVE",
-                "TIPO": "PS",
-                "TOT_ATT": "1",
-                "TOT_OB": "0",
-                "TOT_RT": "0",
-                "TOT_TRATT": "3",
-                "TUTTI": "4",
-                "VERDI_ATT": "1",
-                "VERDI_OB": "0",
-                "VERDI_TRATT": "1",
-                "_id": 5
+                "TIPO": "\(instituteType)",
+                "TOT_ATT": "100",
+                "TOT_OB": "1",
+                "TOT_RT": "123",
+                "TOT_TRATT": "1234",
+                "TUTTI": "5000",
+                "VERDI_ATT": "31",
+                "VERDI_OB": "32",
+                "VERDI_TRATT": "33",
+                "_id": 54
             }
         """
 
@@ -56,7 +56,12 @@ final class RegioneLazioProviderTests: XCTestCase {
         }
         """
 
-        let data = json.data(using: .utf8)!
+        return json
+    }
+
+    func test_parsing() throws {
+
+        let data = json().data(using: .utf8)!
         let result = try sut.mapper(data).first
 
         let dateFormatter: DateFormatter = {
@@ -72,29 +77,29 @@ final class RegioneLazioProviderTests: XCTestCase {
 
         XCTAssertEqual(result?.updated, dateFormatter.date(from: "2019-07-10T09:23:00"))
 
-        XCTAssertEqual(result?.waiting.reds, 0)
-        XCTAssertEqual(result?.waiting.yellows, 0)
-        XCTAssertEqual(result?.waiting.greens, 1)
-        XCTAssertEqual(result?.waiting.whites, 0)
-        XCTAssertEqual(result?.waiting.unassigned, 0)
-        XCTAssertEqual(result?.waiting.count, 1)
+        XCTAssertEqual(result?.waiting.reds, 67)
+        XCTAssertEqual(result?.waiting.yellows, 23)
+        XCTAssertEqual(result?.waiting.greens, 31)
+        XCTAssertEqual(result?.waiting.whites, 7)
+        XCTAssertEqual(result?.waiting.unassigned, 44)
+        XCTAssertEqual(result?.waiting.count, 100)
 
-        XCTAssertEqual(result?.inTreatment?.reds, 0)
-        XCTAssertEqual(result?.inTreatment?.yellows, 2)
-        XCTAssertEqual(result?.inTreatment?.greens, 1)
-        XCTAssertEqual(result?.inTreatment?.whites, 0)
-        XCTAssertEqual(result?.inTreatment?.unassigned, 0)
-        XCTAssertEqual(result?.inTreatment?.count, 3)
+        XCTAssertEqual(result?.inTreatment?.reds, 2)
+        XCTAssertEqual(result?.inTreatment?.yellows, 3)
+        XCTAssertEqual(result?.inTreatment?.greens, 33)
+        XCTAssertEqual(result?.inTreatment?.whites, 73)
+        XCTAssertEqual(result?.inTreatment?.unassigned, 45)
+        XCTAssertEqual(result?.inTreatment?.count, 1234)
 
-        XCTAssertEqual(result?.inShortObservation?.reds, 0)
-        XCTAssertEqual(result?.inShortObservation?.yellows, 0)
-        XCTAssertEqual(result?.inShortObservation?.greens, 0)
-        XCTAssertEqual(result?.inShortObservation?.whites, 0)
+        XCTAssertEqual(result?.inShortObservation?.reds, 69)
+        XCTAssertEqual(result?.inShortObservation?.yellows, 1234)
+        XCTAssertEqual(result?.inShortObservation?.greens, 32)
+        XCTAssertEqual(result?.inShortObservation?.whites, 1)
         XCTAssertEqual(result?.inShortObservation?.unassigned, nil)
-        XCTAssertEqual(result?.inShortObservation?.count, 0)
+        XCTAssertEqual(result?.inShortObservation?.count, 1)
         
-        XCTAssertEqual(result?.patientsWaitingForHospitalizationOrTransfer, 0)
-        XCTAssertEqual(result?.totalPatients, 4)
+        XCTAssertEqual(result?.patientsWaitingForHospitalizationOrTransfer, 123)
+        XCTAssertEqual(result?.totalPatients, 5000)
     }
 
 }

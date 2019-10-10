@@ -40,6 +40,15 @@
 		956327C2234E83E6004DE189 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327C1234E83E6004DE189 /* TableViewDataSource.swift */; };
 		956327C5234E85DC004DE189 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327C4234E85DC004DE189 /* LabelTableViewCell.swift */; };
 		956327C7234E8675004DE189 /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956327C6234E8675004DE189 /* LabelTableViewCell.xib */; };
+		956327D0234E9182004DE189 /* InstituteListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327C9234E9182004DE189 /* InstituteListPresenter.swift */; };
+		956327D1234E9182004DE189 /* InstituteListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327CA234E9182004DE189 /* InstituteListRouter.swift */; };
+		956327D2234E9182004DE189 /* InstituteListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327CB234E9182004DE189 /* InstituteListContracts.swift */; };
+		956327D3234E9182004DE189 /* InstituteListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327CC234E9182004DE189 /* InstituteListModels.swift */; };
+		956327D4234E9182004DE189 /* InstituteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327CD234E9182004DE189 /* InstituteListViewController.swift */; };
+		956327D5234E9182004DE189 /* InstituteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327CE234E9182004DE189 /* InstituteListInteractor.swift */; };
+		956327D6234E9182004DE189 /* InstituteListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327CF234E9182004DE189 /* InstituteListConfigurator.swift */; };
+		956327D8234E91A4004DE189 /* InstituteListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956327D7234E91A4004DE189 /* InstituteListViewController.xib */; };
+		956327DF234EA51E004DE189 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327DE234EA51E004DE189 /* LoadingView.swift */; };
 		95908F08234B620D009B091F /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F07234B620D009B091F /* Scraper.swift */; };
 		95908F0A234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F09234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift */; };
 		95908F13234B8E1B009B091F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F12234B8E1B009B091F /* Helpers.swift */; };
@@ -121,6 +130,15 @@
 		956327C1234E83E6004DE189 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		956327C4234E85DC004DE189 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
 		956327C6234E8675004DE189 /* LabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
+		956327C9234E9182004DE189 /* InstituteListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListPresenter.swift; sourceTree = "<group>"; };
+		956327CA234E9182004DE189 /* InstituteListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListRouter.swift; sourceTree = "<group>"; };
+		956327CB234E9182004DE189 /* InstituteListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListContracts.swift; sourceTree = "<group>"; };
+		956327CC234E9182004DE189 /* InstituteListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListModels.swift; sourceTree = "<group>"; };
+		956327CD234E9182004DE189 /* InstituteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListViewController.swift; sourceTree = "<group>"; };
+		956327CE234E9182004DE189 /* InstituteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListInteractor.swift; sourceTree = "<group>"; };
+		956327CF234E9182004DE189 /* InstituteListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListConfigurator.swift; sourceTree = "<group>"; };
+		956327D7234E91A4004DE189 /* InstituteListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstituteListViewController.xib; sourceTree = "<group>"; };
+		956327DE234EA51E004DE189 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		95908EF2234B5ED3009B091F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		95908EF4234B5F2E009B091F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.2.tbd; sourceTree = DEVELOPER_DIR; };
 		95908F07234B620D009B091F /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
@@ -345,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				956327AE234E8298004DE189 /* RegionList */,
+				956327C8234E9132004DE189 /* InstituteList */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -354,6 +373,7 @@
 			children = (
 				956327C3234E85C6004DE189 /* Cells */,
 				956327C1234E83E6004DE189 /* TableViewDataSource.swift */,
+				956327DE234EA51E004DE189 /* LoadingView.swift */,
 			);
 			path = "Reusable Components";
 			sourceTree = "<group>";
@@ -365,6 +385,21 @@
 				956327C6234E8675004DE189 /* LabelTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		956327C8234E9132004DE189 /* InstituteList */ = {
+			isa = PBXGroup;
+			children = (
+				956327CC234E9182004DE189 /* InstituteListModels.swift */,
+				956327CB234E9182004DE189 /* InstituteListContracts.swift */,
+				956327CA234E9182004DE189 /* InstituteListRouter.swift */,
+				956327CE234E9182004DE189 /* InstituteListInteractor.swift */,
+				956327C9234E9182004DE189 /* InstituteListPresenter.swift */,
+				956327CD234E9182004DE189 /* InstituteListViewController.swift */,
+				956327D7234E91A4004DE189 /* InstituteListViewController.xib */,
+				956327CF234E9182004DE189 /* InstituteListConfigurator.swift */,
+			);
+			path = InstituteList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +459,8 @@
 				953D3CB5234BC0CD00D86E43 /* PBXTargetDependency */,
 			);
 			name = DemoApp;
+			packageProductDependencies = (
+			);
 			productName = DemoApp;
 			productReference = 953D3CA0234BC07000D86E43 /* DemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -511,6 +548,7 @@
 			files = (
 				956327BF234E8320004DE189 /* RegionListViewController.xib in Resources */,
 				956327C7234E8675004DE189 /* LabelTableViewCell.xib in Resources */,
+				956327D8234E91A4004DE189 /* InstituteListViewController.xib in Resources */,
 				953D3CAF234BC07100D86E43 /* LaunchScreen.storyboard in Resources */,
 				953D3CAC234BC07100D86E43 /* Preview Assets.xcassets in Resources */,
 				953D3CA9234BC07100D86E43 /* Assets.xcassets in Resources */,
@@ -570,16 +608,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				956327D4234E9182004DE189 /* InstituteListViewController.swift in Sources */,
+				956327D5234E9182004DE189 /* InstituteListInteractor.swift in Sources */,
 				956327BC234E82BF004DE189 /* RegionListInteractor.swift in Sources */,
 				956327BD234E82BF004DE189 /* RegionListConfigurator.swift in Sources */,
 				956327BB234E82BF004DE189 /* RegionListViewController.swift in Sources */,
 				953D3CA3234BC07000D86E43 /* AppDelegate.swift in Sources */,
+				956327D6234E9182004DE189 /* InstituteListConfigurator.swift in Sources */,
 				956327BA234E82BF004DE189 /* RegionListModels.swift in Sources */,
+				956327D3234E9182004DE189 /* InstituteListModels.swift in Sources */,
 				956327C5234E85DC004DE189 /* LabelTableViewCell.swift in Sources */,
 				956327B9234E82BF004DE189 /* RegionListContracts.swift in Sources */,
 				956327C2234E83E6004DE189 /* TableViewDataSource.swift in Sources */,
+				956327D1234E9182004DE189 /* InstituteListRouter.swift in Sources */,
+				956327D2234E9182004DE189 /* InstituteListContracts.swift in Sources */,
+				956327D0234E9182004DE189 /* InstituteListPresenter.swift in Sources */,
 				953D3CA5234BC07000D86E43 /* SceneDelegate.swift in Sources */,
 				956327B8234E82BF004DE189 /* RegionListRouter.swift in Sources */,
+				956327DF234EA51E004DE189 /* LoadingView.swift in Sources */,
 				956327B7234E82BF004DE189 /* RegionListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

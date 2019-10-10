@@ -15,6 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let regionListVC = RegionListViewController(nibName: nil, bundle: nil)
             RegionListConfigurator.configure(viewController: regionListVC)
             let regionListNC = UINavigationController(rootViewController: regionListVC)
+            regionListNC.overrideUserInterfaceStyle = .light
 
             window.rootViewController = regionListNC
             self.window = window

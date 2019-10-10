@@ -18,6 +18,10 @@ extension RegionListPresenter: RegionListPresenterInput {
         )
     }
 
+    func routeToInstituteList(region: Region) {
+        output?.routeToInstituteList(region: region)
+    }
+
 }
 
 extension Region {

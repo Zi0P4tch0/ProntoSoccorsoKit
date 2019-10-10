@@ -1,11 +1,10 @@
 
 import UIKit
-import ProntoSoccorsoKit
 
-final class RegionListViewController: UIViewController {
+final class InstituteListViewController: UIViewController {
 
-    var output: (RegionListViewOutput & RegionListDataStore)?
-    var router: (RegionListRouter & RegionListDataPassing)?
+    var output: (InstituteListViewOutput & InstituteListDataStore)?
+    var router: (InstituteListRouter & InstituteListDataPassing)?
 
     // MARK: - Views
 
@@ -16,8 +15,6 @@ final class RegionListViewController: UIViewController {
             tableView.delegate = self
         }
     }
-
-    // MARK: - Data Source
 
     var dataSource: TableViewDataSource<LabelTableViewCell>! {
         didSet {
@@ -30,36 +27,39 @@ final class RegionListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "ProntoSoccorso"
         output?.viewDidLoad()
     }
 
 }
 
-// MARK: - RegionListPresenterOutput
+// MARK: - InstituteListPresenterOutput
 
-extension RegionListViewController: RegionListPresenterOutput {
+extension InstituteListViewController: InstituteListPresenterOutput {
 
-    func presentData(viewModel: RegionList.Data.ViewModel) {
-        dataSource = TableViewDataSource(viewModels: viewModel.regions)
+    func presentTitle(viewModel: InstituteList.Title.ViewModel) {
+        title = viewModel.title
     }
 
-    func routeToInstituteList(region: Region) {
-        router?.routeToInstituteList(region: region)
+    func presentData(viewModel: InstituteList.Data.ViewModel) {
+        dataSource = TableViewDataSource(viewModels: viewModel.institutes)
+    }
+
+    func presentLoading(viewModel: InstituteList.Loading.ViewModel) {
+        if viewModel.loading {
+            LoadingView.show(on: view)
+        } else {
+            LoadingView.hide()
+        }
     }
 
 }
 
 // MARK: - UITableViewDelegate
 
-extension RegionListViewController: UITableViewDelegate {
+extension InstituteListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        output?.cellTapped(atIndex: indexPath.row)
     }
 
 }

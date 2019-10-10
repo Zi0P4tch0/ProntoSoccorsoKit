@@ -13,27 +13,27 @@ class DemoAppUITests: XCTestCase {
 
     func test_lazio_still_works() {
         tap("Lazio")
-        waitButton("Policlinico Casilino")
+        waitText("Policlinico Casilino")
     }
 
     func test_friuli_venezia_giulia_still_works() {
         tap("Friuli-Venezia Giulia")
-        waitButton("Pronto Soccorso Gorizia")
+        waitText("Pronto Soccorso Gorizia")
     }
 
     func test_lombardia_valtellina_alto_lario_still_works() {
         tap("Lombardia (Valtellina e Alto Lario)")
-        waitButton("Pronto soccorso di Sondalo")
+        waitText("Pronto soccorso di Sondalo")
     }
 
     func test_puglia_taranto_still_works() {
         tap("Puglia (Taranto)")
-        waitButton("MANDURIA")
+        waitText("MANDURIA")
     }
 
     func test_trentino_alto_adige_trento_still_works() {
         tap("Trentino-Alto Adige (Trento)")
-        waitButton("Ospedale di Trento - Pronto Soccorso")
+        waitText("Ospedale di Trento - Pronto Soccorso")
     }
 
 }
@@ -44,12 +44,12 @@ class DemoAppUITests: XCTestCase {
 extension DemoAppUITests {
 
     func tap(_ button: String) {
-        app.buttons[button].tap()
+        app.staticTexts[button].tap()
     }
 
-    func waitButton(_ value: String, timeout: TimeInterval = 30) {
+    func waitText(_ value: String, timeout: TimeInterval = 30) {
         let exp = expectation(for: NSPredicate(format: "exists = YES"),
-                              evaluatedWith: app.buttons[value],
+                              evaluatedWith: app.staticTexts[value],
                               handler: nil)
         wait(for: [exp], timeout: timeout)
     }

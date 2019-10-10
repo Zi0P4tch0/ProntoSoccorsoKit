@@ -16,7 +16,7 @@ extension Cell where Self: UITableViewCell {
 
 final class TableViewDataSource<TableCell>: NSObject, UITableViewDataSource where TableCell: UITableViewCell & Cell {
 
-    private let viewModels: [TableCell.ViewModel]
+    let viewModels: [TableCell.ViewModel]
 
     init(viewModels: [TableCell.ViewModel]) {
         self.viewModels = viewModels

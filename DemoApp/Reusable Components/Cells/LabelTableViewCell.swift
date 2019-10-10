@@ -11,4 +11,11 @@ final class LabelTableViewCell: UITableViewCell, Cell, DisclosableCell {
 
     @IBOutlet private weak var label: UILabel!
 
+    // MARK: - Reuse
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        label.text = nil
+    }
+
 }

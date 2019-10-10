@@ -26,4 +26,9 @@ extension RegionListInteractor: RegionListInteractorInput  {
         )
     }
 
+    func cellTapped(atIndex: Int) {
+        let region = allRegions[atIndex]
+        output?.routeToInstituteList(region: region)
+    }
+
 }

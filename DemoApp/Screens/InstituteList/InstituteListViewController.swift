@@ -54,7 +54,7 @@ extension InstituteListViewController: InstituteListPresenterOutput {
         if viewModel.loading {
             LoadingView.show(on: view)
         } else {
-            LoadingView.hide()
+            LoadingView.hide(from: view)
         }
     }
 

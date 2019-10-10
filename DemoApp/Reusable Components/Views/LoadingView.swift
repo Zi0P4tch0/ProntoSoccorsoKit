@@ -5,13 +5,13 @@ private let tag = 0xCAFE
 
 enum LoadingView {
 
-    private static func get() -> UIView? {
-        UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.viewWithTag(tag)
+    private static func get(from view: UIView) -> UIView? {
+       return view.viewWithTag(tag)
     }
 
     static func show(on view: UIView) {
 
-        guard get() == nil else { return }
+        guard get(from: view) == nil else { return }
 
         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -39,9 +39,9 @@ enum LoadingView {
 
     }
 
-    static func hide() {
+    static func hide(from view: UIView) {
 
-        get()?.removeFromSuperview()
+        get(from: view)?.removeFromSuperview()
 
     }
 

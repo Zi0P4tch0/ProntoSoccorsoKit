@@ -1,5 +1,6 @@
 
 import Foundation
+import CoreLocation
 
 final class InstituteInteractor: InstituteDataStore {
 
@@ -13,5 +14,12 @@ final class InstituteInteractor: InstituteDataStore {
 
 extension InstituteInteractor: InstituteInteractorInput  {
 
+    func viewDidLoad() {
+
+        output?.updateData(response:
+            Institute.Data.Response(institute: institute)
+        )
+
+    }
 
 }

@@ -18,19 +18,19 @@ protocol InstituteDataPassing {
 // MARK: - Interactor
 
 protocol InstituteInteractorInput {
-
+    func viewDidLoad()
 }
 
 // MARK: - Presenter
 
 protocol InstitutePresenterInput {
-
+    func updateData(response: Institute.Data.Response)
 }
 
 // MARK: - View
 
 protocol InstituteViewInput: class {
-
+    func presentData(viewModel: Institute.Data.ViewModel)
 }
 
 // MARK: - Typealiases

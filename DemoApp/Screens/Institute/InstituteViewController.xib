@@ -9,16 +9,109 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InstituteViewController" customModule="DemoApp" customModuleProvider="target">
             <connections>
+                <outlet property="localHealthUnitLabel" destination="7tk-ac-7Fk" id="2mX-vP-KQo"/>
+                <outlet property="municipalityLabel" destination="HJK-uq-HB9" id="Wn2-VB-c8Q"/>
+                <outlet property="nameLabel" destination="Wca-E8-syj" id="on0-Da-Iyq"/>
+                <outlet property="observationContainerView" destination="4Lz-DN-Wlk" id="KvU-g9-O9c"/>
+                <outlet property="treatmentContainerView" destination="Jz4-De-bsL" id="uRi-ID-9vz"/>
                 <outlet property="view" destination="iN0-l3-epB" id="UTF-a4-5Wk"/>
+                <outlet property="waitingContainerView" destination="xeu-18-e9M" id="rRb-hm-axs"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Wca-E8-syj">
+                    <rect key="frame" x="16" y="60" width="382" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JQ1-xv-Qew">
+                    <rect key="frame" x="16" y="92" width="382" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local health unit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tk-ac-7Fk">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Municipality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJK-uq-HB9">
+                            <rect key="frame" x="0.0" y="37.5" width="382" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="8n9-y9-Zbl"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeu-18-e9M" userLabel="Waiting Container View">
+                    <rect key="frame" x="16" y="175" width="382" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Kif-bl-Qfy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jz4-De-bsL" userLabel="Treatment Container View">
+                    <rect key="frame" x="16" y="223" width="382" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treatment data not available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afs-Mr-jbJ">
+                            <rect key="frame" x="83" y="10" width="216.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="afs-Mr-jbJ" firstAttribute="centerY" secondItem="Jz4-De-bsL" secondAttribute="centerY" id="8SF-RT-bv0"/>
+                        <constraint firstItem="afs-Mr-jbJ" firstAttribute="centerX" secondItem="Jz4-De-bsL" secondAttribute="centerX" id="N6W-r0-2AL"/>
+                        <constraint firstAttribute="height" constant="40" id="hoz-0F-SBr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Lz-DN-Wlk" userLabel="Observation Container View">
+                    <rect key="frame" x="16" y="271" width="382" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Observation data not available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxB-va-H7c">
+                            <rect key="frame" x="75.5" y="10" width="231.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="QxB-va-H7c" firstAttribute="centerX" secondItem="4Lz-DN-Wlk" secondAttribute="centerX" id="4tj-zN-7FY"/>
+                        <constraint firstAttribute="height" constant="40" id="5vQ-yO-xNq"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="RxW-tH-WV7"/>
+                        <constraint firstItem="QxB-va-H7c" firstAttribute="centerY" secondItem="4Lz-DN-Wlk" secondAttribute="centerY" id="noe-xO-L2b"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JQ1-xv-Qew" firstAttribute="top" secondItem="Wca-E8-syj" secondAttribute="bottom" constant="8" id="869-TT-QRv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xeu-18-e9M" secondAttribute="trailing" constant="16" id="9I9-0x-YA5"/>
+                <constraint firstItem="xeu-18-e9M" firstAttribute="top" secondItem="JQ1-xv-Qew" secondAttribute="bottom" constant="8" id="Irs-8t-ggk"/>
+                <constraint firstItem="Jz4-De-bsL" firstAttribute="top" secondItem="xeu-18-e9M" secondAttribute="bottom" constant="8" id="Kty-Vo-dH8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JQ1-xv-Qew" secondAttribute="trailing" constant="16" id="LKl-d2-S6s"/>
+                <constraint firstItem="xeu-18-e9M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="RFH-h8-AjA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Lz-DN-Wlk" secondAttribute="trailing" constant="16" id="RZs-4d-zgQ"/>
+                <constraint firstItem="4Lz-DN-Wlk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="VHt-F5-nQg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jz4-De-bsL" secondAttribute="trailing" constant="16" id="VO5-d5-ElD"/>
+                <constraint firstItem="Jz4-De-bsL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="WX7-Ib-Fuc"/>
+                <constraint firstItem="Wca-E8-syj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Whi-lP-zDa"/>
+                <constraint firstItem="4Lz-DN-Wlk" firstAttribute="top" secondItem="Jz4-De-bsL" secondAttribute="bottom" constant="8" id="idC-7K-ZW3"/>
+                <constraint firstItem="Wca-E8-syj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="kIS-zy-Ks7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wca-E8-syj" secondAttribute="trailing" constant="16" id="m4P-n1-kVL"/>
+                <constraint firstItem="JQ1-xv-Qew" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="smT-iz-3oU"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="139" y="153"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
 </document>

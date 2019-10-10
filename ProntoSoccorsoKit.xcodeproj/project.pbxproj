@@ -16,6 +16,8 @@
 		951CEA15234F1BB00047DB8F /* InstituteConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA0E234F1BB00047DB8F /* InstituteConfigurator.swift */; };
 		951CEA17234F1BFD0047DB8F /* Imports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA16234F1BFD0047DB8F /* Imports.swift */; };
 		951CEA19234F1CB00047DB8F /* InstituteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 951CEA18234F1CB00047DB8F /* InstituteViewController.xib */; };
+		951CEA1D234F363B0047DB8F /* TriageDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA1C234F363B0047DB8F /* TriageDataView.swift */; };
+		951CEA1F234F47D60047DB8F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA1E234F47D60047DB8F /* SwiftUIView.swift */; };
 		951E5986234A4E8D00F44D06 /* ProntoSoccorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */; };
 		951E598D234A4E9E00F44D06 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E598C234A4E9E00F44D06 /* Regions.swift */; };
 		951E5992234A4F0800F44D06 /* Lazio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5991234A4F0800F44D06 /* Lazio.swift */; };
@@ -111,6 +113,8 @@
 		951CEA0E234F1BB00047DB8F /* InstituteConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteConfigurator.swift; sourceTree = "<group>"; };
 		951CEA16234F1BFD0047DB8F /* Imports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imports.swift; sourceTree = "<group>"; };
 		951CEA18234F1CB00047DB8F /* InstituteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstituteViewController.xib; sourceTree = "<group>"; };
+		951CEA1C234F363B0047DB8F /* TriageDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageDataView.swift; sourceTree = "<group>"; };
+		951CEA1E234F47D60047DB8F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProntoSoccorsoKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProntoSoccorso.swift; sourceTree = "<group>"; };
 		951E598C234A4E9E00F44D06 /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
@@ -214,6 +218,23 @@
 				951CEA0E234F1BB00047DB8F /* InstituteConfigurator.swift */,
 			);
 			path = Institute;
+			sourceTree = "<group>";
+		};
+		951CEA1A234F28FB0047DB8F /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				956327C1234E83E6004DE189 /* TableViewDataSource.swift */,
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		951CEA1B234F29070047DB8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				956327DE234EA51E004DE189 /* LoadingView.swift */,
+				951CEA1C234F363B0047DB8F /* TriageDataView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		951E5979234A4E8D00F44D06 = {
@@ -407,8 +428,9 @@
 			isa = PBXGroup;
 			children = (
 				956327C3234E85C6004DE189 /* Cells */,
-				956327C1234E83E6004DE189 /* TableViewDataSource.swift */,
-				956327DE234EA51E004DE189 /* LoadingView.swift */,
+				951CEA1A234F28FB0047DB8F /* Data Sources */,
+				951CEA1B234F29070047DB8F /* Views */,
+				951CEA1E234F47D60047DB8F /* SwiftUIView.swift */,
 			);
 			path = "Reusable Components";
 			sourceTree = "<group>";
@@ -668,7 +690,9 @@
 				956327D0234E9182004DE189 /* InstituteListPresenter.swift in Sources */,
 				951CEA17234F1BFD0047DB8F /* Imports.swift in Sources */,
 				953D3CA5234BC07000D86E43 /* SceneDelegate.swift in Sources */,
+				951CEA1D234F363B0047DB8F /* TriageDataView.swift in Sources */,
 				956327B8234E82BF004DE189 /* RegionListRouter.swift in Sources */,
+				951CEA1F234F47D60047DB8F /* SwiftUIView.swift in Sources */,
 				956327DF234EA51E004DE189 /* LoadingView.swift in Sources */,
 				956327B7234E82BF004DE189 /* RegionListPresenter.swift in Sources */,
 			);
@@ -961,6 +985,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
 				INFOPLIST_FILE = DemoAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -979,6 +1004,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
 				INFOPLIST_FILE = DemoAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,9 +1,3 @@
-//
-//  InstituteListPresenter.swift
-//  ProntoSoccorsoKit
-//
-//  Created by Matteo Pacini on 10/10/2019.
-//  Copyright (c) 2019 Matteo Pacini. All rights reserved.
 
 import Foundation
 
@@ -35,4 +29,18 @@ extension InstituteListPresenter: InstituteListPresenterInput {
         )
     }
 
+    func updateError(response: InstituteList.Error.Response) {
+        let viewModel = InstituteList.Error.ViewModel(title: "Error", message: response.error.localizedDescription)
+        output?.presentError(viewModel: viewModel)
+    }
+
+    func routeToInstitute(institute: HealthInstitute) {
+        output?.routeToInstitute(institute: institute)
+    }
+
+    func updateRefreshButtonStatus(response: InstituteList.RefreshButtonStatus.Response) {
+        output?.presentRefreshButtonStatus(viewModel:
+            InstituteList.RefreshButtonStatus.ViewModel(enabled: response.enabled)
+        )
+    }
 }

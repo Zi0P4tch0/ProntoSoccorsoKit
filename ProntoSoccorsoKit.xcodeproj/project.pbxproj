@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951CEA0F234F1BB00047DB8F /* InstitutePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA08234F1BB00047DB8F /* InstitutePresenter.swift */; };
+		951CEA10234F1BB00047DB8F /* InstituteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA09234F1BB00047DB8F /* InstituteRouter.swift */; };
+		951CEA11234F1BB00047DB8F /* InstituteContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA0A234F1BB00047DB8F /* InstituteContracts.swift */; };
+		951CEA12234F1BB00047DB8F /* InstituteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA0B234F1BB00047DB8F /* InstituteModels.swift */; };
+		951CEA13234F1BB00047DB8F /* InstituteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA0C234F1BB00047DB8F /* InstituteViewController.swift */; };
+		951CEA14234F1BB00047DB8F /* InstituteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA0D234F1BB00047DB8F /* InstituteInteractor.swift */; };
+		951CEA15234F1BB00047DB8F /* InstituteConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA0E234F1BB00047DB8F /* InstituteConfigurator.swift */; };
+		951CEA17234F1BFD0047DB8F /* Imports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA16234F1BFD0047DB8F /* Imports.swift */; };
+		951CEA19234F1CB00047DB8F /* InstituteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 951CEA18234F1CB00047DB8F /* InstituteViewController.xib */; };
 		951E5986234A4E8D00F44D06 /* ProntoSoccorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */; };
 		951E598D234A4E9E00F44D06 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E598C234A4E9E00F44D06 /* Regions.swift */; };
 		951E5992234A4F0800F44D06 /* Lazio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5991234A4F0800F44D06 /* Lazio.swift */; };
@@ -93,6 +102,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		951CEA08234F1BB00047DB8F /* InstitutePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutePresenter.swift; sourceTree = "<group>"; };
+		951CEA09234F1BB00047DB8F /* InstituteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteRouter.swift; sourceTree = "<group>"; };
+		951CEA0A234F1BB00047DB8F /* InstituteContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteContracts.swift; sourceTree = "<group>"; };
+		951CEA0B234F1BB00047DB8F /* InstituteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteModels.swift; sourceTree = "<group>"; };
+		951CEA0C234F1BB00047DB8F /* InstituteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteViewController.swift; sourceTree = "<group>"; };
+		951CEA0D234F1BB00047DB8F /* InstituteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteInteractor.swift; sourceTree = "<group>"; };
+		951CEA0E234F1BB00047DB8F /* InstituteConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteConfigurator.swift; sourceTree = "<group>"; };
+		951CEA16234F1BFD0047DB8F /* Imports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imports.swift; sourceTree = "<group>"; };
+		951CEA18234F1CB00047DB8F /* InstituteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstituteViewController.xib; sourceTree = "<group>"; };
 		951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProntoSoccorsoKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProntoSoccorso.swift; sourceTree = "<group>"; };
 		951E598C234A4E9E00F44D06 /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
@@ -183,6 +201,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951CEA07234F1B8F0047DB8F /* Institute */ = {
+			isa = PBXGroup;
+			children = (
+				951CEA0B234F1BB00047DB8F /* InstituteModels.swift */,
+				951CEA0A234F1BB00047DB8F /* InstituteContracts.swift */,
+				951CEA09234F1BB00047DB8F /* InstituteRouter.swift */,
+				951CEA0D234F1BB00047DB8F /* InstituteInteractor.swift */,
+				951CEA08234F1BB00047DB8F /* InstitutePresenter.swift */,
+				951CEA0C234F1BB00047DB8F /* InstituteViewController.swift */,
+				951CEA18234F1CB00047DB8F /* InstituteViewController.xib */,
+				951CEA0E234F1BB00047DB8F /* InstituteConfigurator.swift */,
+			);
+			path = Institute;
+			sourceTree = "<group>";
+		};
 		951E5979234A4E8D00F44D06 = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +340,7 @@
 		953D3CA1234BC07000D86E43 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				951CEA16234F1BFD0047DB8F /* Imports.swift */,
 				956327C0234E83CE004DE189 /* Reusable Components */,
 				956327AF234E82AB004DE189 /* Screens */,
 				953D3CA2234BC07000D86E43 /* AppDelegate.swift */,
@@ -364,6 +398,7 @@
 			children = (
 				956327AE234E8298004DE189 /* RegionList */,
 				956327C8234E9132004DE189 /* InstituteList */,
+				951CEA07234F1B8F0047DB8F /* Institute */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -546,6 +581,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951CEA19234F1CB00047DB8F /* InstituteViewController.xib in Resources */,
 				956327BF234E8320004DE189 /* RegionListViewController.xib in Resources */,
 				956327C7234E8675004DE189 /* LabelTableViewCell.xib in Resources */,
 				956327D8234E91A4004DE189 /* InstituteListViewController.xib in Resources */,
@@ -608,6 +644,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951CEA13234F1BB00047DB8F /* InstituteViewController.swift in Sources */,
+				951CEA14234F1BB00047DB8F /* InstituteInteractor.swift in Sources */,
 				956327D4234E9182004DE189 /* InstituteListViewController.swift in Sources */,
 				956327D5234E9182004DE189 /* InstituteListInteractor.swift in Sources */,
 				956327BC234E82BF004DE189 /* RegionListInteractor.swift in Sources */,
@@ -616,13 +654,19 @@
 				953D3CA3234BC07000D86E43 /* AppDelegate.swift in Sources */,
 				956327D6234E9182004DE189 /* InstituteListConfigurator.swift in Sources */,
 				956327BA234E82BF004DE189 /* RegionListModels.swift in Sources */,
+				951CEA0F234F1BB00047DB8F /* InstitutePresenter.swift in Sources */,
 				956327D3234E9182004DE189 /* InstituteListModels.swift in Sources */,
 				956327C5234E85DC004DE189 /* LabelTableViewCell.swift in Sources */,
+				951CEA12234F1BB00047DB8F /* InstituteModels.swift in Sources */,
 				956327B9234E82BF004DE189 /* RegionListContracts.swift in Sources */,
 				956327C2234E83E6004DE189 /* TableViewDataSource.swift in Sources */,
 				956327D1234E9182004DE189 /* InstituteListRouter.swift in Sources */,
+				951CEA10234F1BB00047DB8F /* InstituteRouter.swift in Sources */,
+				951CEA15234F1BB00047DB8F /* InstituteConfigurator.swift in Sources */,
+				951CEA11234F1BB00047DB8F /* InstituteContracts.swift in Sources */,
 				956327D2234E9182004DE189 /* InstituteListContracts.swift in Sources */,
 				956327D0234E9182004DE189 /* InstituteListPresenter.swift in Sources */,
+				951CEA17234F1BFD0047DB8F /* Imports.swift in Sources */,
 				953D3CA5234BC07000D86E43 /* SceneDelegate.swift in Sources */,
 				956327B8234E82BF004DE189 /* RegionListRouter.swift in Sources */,
 				956327DF234EA51E004DE189 /* LoadingView.swift in Sources */,

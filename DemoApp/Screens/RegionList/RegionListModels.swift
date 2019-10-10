@@ -1,6 +1,5 @@
 
 import Foundation
-import ProntoSoccorsoKit
 
 enum RegionList {
 
@@ -8,6 +7,13 @@ enum RegionList {
         struct Request { }
         struct Response { let regions: [Region] }
         struct ViewModel { let regions: [String] }
+    }
+
+    enum RowSelected {
+        struct Request { let index: Int }
+        struct Response { }
+        struct ViewModel { }
+        
     }
   
 }

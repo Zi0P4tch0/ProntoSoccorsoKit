@@ -1,6 +1,5 @@
 
 import UIKit
-import ProntoSoccorsoKit
 
 final class RegionListRouter: RegionListDataPassing { 
   

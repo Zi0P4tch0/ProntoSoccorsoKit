@@ -1,6 +1,5 @@
 
 import Foundation
-import ProntoSoccorsoKit
 
 final class RegionListInteractor: RegionListDataStore {
 
@@ -26,8 +25,8 @@ extension RegionListInteractor: RegionListInteractorInput  {
         )
     }
 
-    func cellTapped(atIndex: Int) {
-        let region = allRegions[atIndex]
+    func selectedRow(request: RegionList.RowSelected.Request) {
+        let region = allRegions[request.index]
         output?.routeToInstituteList(region: region)
     }
 

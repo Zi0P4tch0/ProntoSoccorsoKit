@@ -1,6 +1,5 @@
 
 import UIKit
-import ProntoSoccorsoKit
 
 final class RegionListViewController: UIViewController {
 
@@ -59,7 +58,9 @@ extension RegionListViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        output?.cellTapped(atIndex: indexPath.row)
+        output?.selectedRow(request:
+            RegionList.RowSelected.Request(index: indexPath.row)
+        )
     }
 
 }

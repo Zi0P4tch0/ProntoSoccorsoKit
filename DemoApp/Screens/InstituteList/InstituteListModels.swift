@@ -1,6 +1,5 @@
 
 import Foundation
-import ProntoSoccorsoKit
 
 enum InstituteList {
 
@@ -20,6 +19,34 @@ enum InstituteList {
         struct Request { }
         struct Response { let loading: Bool }
         struct ViewModel { let loading: Bool }
+    }
+
+    enum Error {
+        struct Request { }
+        struct Response { let error: Swift.Error }
+        struct ViewModel {
+            let title: String
+            let message: String
+        }
+    }
+
+    enum RowSelected {
+        struct Request { let index: Int }
+        struct Response { }
+        struct ViewModel { }
+
+    }
+
+    enum Refresh {
+        struct Request { }
+        struct Response { }
+        struct ViewModel { }
+    }
+
+    enum RefreshButtonStatus {
+        struct Request { }
+        struct Response { let enabled: Bool }
+        struct ViewModel { let enabled: Bool }
     }
 
 }

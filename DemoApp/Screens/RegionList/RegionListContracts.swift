@@ -1,6 +1,4 @@
 
-import ProntoSoccorsoKit
-
 // MARK: - Router
 
 protocol RegionListRouterType {
@@ -21,7 +19,7 @@ protocol RegionListDataPassing {
 
 protocol RegionListInteractorInput {
     func viewDidLoad()
-    func cellTapped(atIndex: Int)
+    func selectedRow(request: RegionList.RowSelected.Request)
 }
 
 // MARK: - Presenter

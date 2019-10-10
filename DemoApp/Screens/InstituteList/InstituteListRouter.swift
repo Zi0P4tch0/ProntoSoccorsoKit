@@ -1,9 +1,3 @@
-//
-//  InstituteListRouter.swift
-//  ProntoSoccorsoKit
-//
-//  Created by Matteo Pacini on 10/10/2019.
-//  Copyright (c) 2019 Matteo Pacini. All rights reserved.
 
 import UIKit
 
@@ -17,5 +11,14 @@ final class InstituteListRouter: InstituteListDataPassing {
 // MARK: - InstituteListRouterType 
 
 extension InstituteListRouter: InstituteListRouterType {
+
+    func routeToInstitute(institute: HealthInstitute) {
+
+        let instituteVC = InstituteViewController(nibName: nil, bundle: nil)
+        InstituteConfigurator.configure(viewController: instituteVC, institute: institute)
+
+        viewController?.navigationController?.pushViewController(instituteVC, animated: true)
+
+    }
 
 }

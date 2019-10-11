@@ -1,6 +1,7 @@
 
 import UIKit
 import SwiftUI
+import MapKit
 
 final class InstituteViewController: UIViewController {
 
@@ -34,6 +35,11 @@ final class InstituteViewController: UIViewController {
         }
     }
 
+    @IBOutlet private weak var mapView: MKMapView! {
+        didSet {
+            mapView.showsTraffic = true
+        }
+    }
 
     @SwiftUIView<TriageDataView, InstituteViewController>
     var waitingView: TriageDataView?
@@ -78,6 +84,26 @@ extension InstituteViewController: InstitutePresenterOutput {
         if let observationData = viewModel.observation {
             observationView = TriageDataView(name: "In observation: ", data: observationData)
         }
+
+    }
+
+    func presentMapLoading(viewModel: Institute.MapLoading.ViewModel) {
+        if viewModel.loading {
+            LoadingView.show(on: mapView)
+            if let message = viewModel.message {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    LoadingView.stopAndShowMessage(message, on: self.mapView)
+                }
+            }
+        } else {
+            LoadingView.hide(from: mapView)
+        }
+    }
+
+    func presentMapLocation(viewModel: Institute.MapLocation.ViewModel) {
+
+        mapView.addAnnotation(viewModel.annotation)
+        mapView.setRegion(viewModel.region, animated: true)
 
     }
 }

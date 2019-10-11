@@ -25,12 +25,16 @@ protocol InstituteInteractorInput {
 
 protocol InstitutePresenterInput {
     func updateData(response: Institute.Data.Response)
+    func updateMapLoading(response: Institute.MapLoading.Response)
+    func updateMapLocation(response: Institute.MapLocation.Response)
 }
 
 // MARK: - View
 
 protocol InstituteViewInput: class {
     func presentData(viewModel: Institute.Data.ViewModel)
+    func presentMapLoading(viewModel: Institute.MapLoading.ViewModel)
+    func presentMapLocation(viewModel: Institute.MapLocation.ViewModel)
 }
 
 // MARK: - Typealiases

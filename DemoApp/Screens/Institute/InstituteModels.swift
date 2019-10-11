@@ -17,5 +17,26 @@ enum Institute {
             let observation: HealthInstitute.TriageData?
         }
     }
+
+    enum MapLoading {
+        struct Request { }
+        struct Response {
+            let loading: Bool
+            let hasAddress: Bool
+        }
+        struct ViewModel {
+            let loading: Bool
+            let message: String?
+        }
+    }
+
+    enum MapLocation {
+        struct Request { }
+        struct Response { let placemark: CLPlacemark }
+        struct ViewModel {
+            let region: MKCoordinateRegion
+            let annotation: MKPointAnnotation
+        }
+    }
   
 }

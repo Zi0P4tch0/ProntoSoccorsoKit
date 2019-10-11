@@ -59,6 +59,7 @@ struct RegioneTrentinoAltoAdigeTrentoProvider: Provider {
             return HealthInstitute(name: name,
                                    municipality: "Trento",
                                    localHealthUnit: "ASSP Provincia Di Trento",
+                                   address: nil,
                                    type: type,
                                    waiting: waitingSection,
                                    inTreatment: treatmentSection,

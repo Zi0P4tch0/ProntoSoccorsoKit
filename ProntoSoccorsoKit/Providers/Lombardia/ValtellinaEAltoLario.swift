@@ -55,6 +55,7 @@ struct RegioneLombardiaValtellinaEAltoLarioProvider: Provider {
             return HealthInstitute(name: tuple.0,
                                    municipality: nil,
                                    localHealthUnit: "ASST Valtellina e Alto Lario",
+                                   address: nil,
                                    type: .generic,
                                    waiting: waiting,
                                    inTreatment: treatment,

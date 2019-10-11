@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InstituteViewController" customModule="DemoApp" customModuleProvider="target">
             <connections>
                 <outlet property="localHealthUnitLabel" destination="7tk-ac-7Fk" id="2mX-vP-KQo"/>
+                <outlet property="mapView" destination="DzT-zp-DEF" id="xde-Cq-ATE"/>
                 <outlet property="municipalityLabel" destination="HJK-uq-HB9" id="Wn2-VB-c8Q"/>
                 <outlet property="nameLabel" destination="Wca-E8-syj" id="on0-Da-Iyq"/>
                 <outlet property="observationContainerView" destination="4Lz-DN-Wlk" id="KvU-g9-O9c"/>
@@ -91,6 +92,12 @@
                         <constraint firstItem="QxB-va-H7c" firstAttribute="centerY" secondItem="4Lz-DN-Wlk" secondAttribute="centerY" id="noe-xO-L2b"/>
                     </constraints>
                 </view>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DzT-zp-DEF">
+                    <rect key="frame" x="16" y="319" width="382" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="It1-Yb-7sR"/>
+                    </constraints>
+                </mapView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -98,7 +105,10 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xeu-18-e9M" secondAttribute="trailing" constant="16" id="9I9-0x-YA5"/>
                 <constraint firstItem="xeu-18-e9M" firstAttribute="top" secondItem="JQ1-xv-Qew" secondAttribute="bottom" constant="8" id="Irs-8t-ggk"/>
                 <constraint firstItem="Jz4-De-bsL" firstAttribute="top" secondItem="xeu-18-e9M" secondAttribute="bottom" constant="8" id="Kty-Vo-dH8"/>
+                <constraint firstItem="DzT-zp-DEF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="LEV-X2-AH3"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JQ1-xv-Qew" secondAttribute="trailing" constant="16" id="LKl-d2-S6s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DzT-zp-DEF" secondAttribute="trailing" constant="16" id="OOp-pR-cVJ"/>
+                <constraint firstItem="DzT-zp-DEF" firstAttribute="top" secondItem="4Lz-DN-Wlk" secondAttribute="bottom" constant="8" id="PbV-0e-icp"/>
                 <constraint firstItem="xeu-18-e9M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="RFH-h8-AjA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Lz-DN-Wlk" secondAttribute="trailing" constant="16" id="RZs-4d-zgQ"/>
                 <constraint firstItem="4Lz-DN-Wlk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="VHt-F5-nQg"/>

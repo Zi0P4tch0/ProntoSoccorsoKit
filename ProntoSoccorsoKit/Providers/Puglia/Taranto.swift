@@ -51,6 +51,7 @@ struct RegionePugliaTarantoProvider: Provider {
             return HealthInstitute(name: name,
                                    municipality: "Taranto",
                                    localHealthUnit: "ASL Taranto",
+                                   address: nil,
                                    type: .generic,
                                    waiting: waitingSection,
                                    inTreatment: treatmentSection,

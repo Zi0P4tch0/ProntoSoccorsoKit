@@ -1,43 +1,5 @@
 import Foundation
 
-// MARK: - Regione Lazio Responses
-private struct Institute: Decodable {
-    let _id: Int
-    let COMUNE: String
-    let BIANCHI_TRATT: String
-    let NONESEG_TRATT: String
-    let TUTTI: String
-    let DATA: String
-    let TOT_ATT: String
-    let CODICE: String
-    let TIPO: String
-    let ROSSI_TRATT: String
-    let TOT_OB: String
-    let TOT_RT: String
-    let ROSSI_OB: String
-    let VERDI_OB: String
-    let TOT_TRATT: String
-    let GIALLI_ATT: String
-    let ASL: String
-    let GIALLI_OB: String
-    let GIALLI_TRATT: String
-    let NONESEG_ATT: String
-    let BIANCHI_ATT: String
-    let BIANCHI_OB: String
-    let VERDI_TRATT: String
-    let ROSSI_ATT: String
-    let ISTITUTO: String
-    let VERDI_ATT: String
-}
-
-private struct Result: Decodable {
-    let records: [Institute]
-}
-
-private struct Response: Decodable {
-    let result: Result
-}
-
 // MARK - Provider Regione Lazio
 struct RegioneLazioProvider: Provider {
 
@@ -46,7 +8,7 @@ struct RegioneLazioProvider: Provider {
     let urlString: String = "http://dati.lazio.it/catalog/api/action/datastore_search?resource_id=12c31624-f1a4-4874-a903-8954549ddb81"
 
     let mapper: (Data) throws -> [HealthInstitute] = { data in
-        let response = try JSONDecoder().decode(Response.self, from: data)
+        let response = try JSONDecoder().decode(LazioResponse.self, from: data)
         return try response.result.records.map { try HealthInstitute(from: $0) }
     }
 }
@@ -76,12 +38,13 @@ private let dateFormatter: DateFormatter = {
 
 private extension HealthInstitute {
 
-    init(from raw: Institute) throws {
+    init(from raw: LazioInstitute) throws {
 
-        name = raw.ISTITUTO
+        name = lazioNames[raw.ISTITUTO] ?? raw.ISTITUTO
         type = HealthInstitute.InstituteType.from(tipo: raw.TIPO)
         municipality = raw.COMUNE
         localHealthUnit = "ASL \(raw.ASL)"
+        address = lazioAddresses[raw.ISTITUTO] 
         updated = try dateFormatter.date(fromString: raw.DATA)
         totalPatients = try Int(fromString: raw.TUTTI)
         patientsWaitingForHospitalizationOrTransfer = try Int(fromString: raw.TOT_RT)

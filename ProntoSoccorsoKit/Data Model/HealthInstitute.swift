@@ -82,6 +82,9 @@ public struct HealthInstitute: Equatable {
     /// Local health unit - may not be available.
     public let localHealthUnit: String?
 
+    /// Institute address - may not be available.
+    public let address: String?
+
     /// Institute type.
     public let type: InstituteType
 

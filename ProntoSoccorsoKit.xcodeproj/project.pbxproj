@@ -30,6 +30,8 @@
 		951E59D3234B21AB00F44D06 /* RegioneLazioProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D2234B21AB00F44D06 /* RegioneLazioProviderTests.swift */; };
 		951E59D5234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D4234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift */; };
 		951E59D8234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */; };
+		952617F6234F936E009F1E88 /* Lazio+RawResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952617F5234F936E009F1E88 /* Lazio+RawResponses.swift */; };
+		952617F8234FA2F6009F1E88 /* Lazio+Improvements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952617F7234FA2F6009F1E88 /* Lazio+Improvements.swift */; };
 		9533FD56234C6ABA00593CE5 /* Trento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD55234C6ABA00593CE5 /* Trento.swift */; };
 		9533FD58234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */; };
 		953D3CA3234BC07000D86E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA2234BC07000D86E43 /* AppDelegate.swift */; };
@@ -128,6 +130,8 @@
 		951E59D2234B21AB00F44D06 /* RegioneLazioProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneLazioProviderTests.swift; sourceTree = "<group>"; };
 		951E59D4234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionePugliaTarantoProviderTests.swift; sourceTree = "<group>"; };
 		951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriuliVeneziaGiulia.swift; sourceTree = "<group>"; };
+		952617F5234F936E009F1E88 /* Lazio+RawResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lazio+RawResponses.swift"; sourceTree = "<group>"; };
+		952617F7234FA2F6009F1E88 /* Lazio+Improvements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lazio+Improvements.swift"; sourceTree = "<group>"; };
 		9533FD55234C6ABA00593CE5 /* Trento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trento.swift; sourceTree = "<group>"; };
 		9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneTrentinoAltoAdigeTrentoProviderTests.swift; sourceTree = "<group>"; };
 		953D3CA0234BC07000D86E43 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -300,6 +304,8 @@
 			isa = PBXGroup;
 			children = (
 				951E5991234A4F0800F44D06 /* Lazio.swift */,
+				952617F5234F936E009F1E88 /* Lazio+RawResponses.swift */,
+				952617F7234FA2F6009F1E88 /* Lazio+Improvements.swift */,
 			);
 			path = Lazio;
 			sourceTree = "<group>";
@@ -642,7 +648,9 @@
 				95908F13234B8E1B009B091F /* Helpers.swift in Sources */,
 				951E59D1234B155900F44D06 /* Taranto.swift in Sources */,
 				951E5992234A4F0800F44D06 /* Lazio.swift in Sources */,
+				952617F8234FA2F6009F1E88 /* Lazio+Improvements.swift in Sources */,
 				951E5995234A4FDF00F44D06 /* HealthInstitute.swift in Sources */,
+				952617F6234F936E009F1E88 /* Lazio+RawResponses.swift in Sources */,
 				951E5998234A552100F44D06 /* Provider.swift in Sources */,
 				951E598D234A4E9E00F44D06 /* Regions.swift in Sources */,
 				95908F08234B620D009B091F /* Scraper.swift in Sources */,
@@ -948,6 +956,7 @@
 				DEVELOPMENT_TEAM = DSM3BQ7EM4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -969,6 +978,7 @@
 				DEVELOPMENT_TEAM = DSM3BQ7EM4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

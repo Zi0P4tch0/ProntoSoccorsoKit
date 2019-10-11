@@ -59,6 +59,7 @@ struct RegioneFriuliVeneziaGiuliaProvider: Provider {
             return HealthInstitute(name: name,
                                    municipality: nil,
                                    localHealthUnit: nil,
+                                   address: nil,
                                    type: .generic,
                                    waiting: waiting,
                                    inTreatment: treatment,

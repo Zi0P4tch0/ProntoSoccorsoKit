@@ -14,7 +14,7 @@ let package = Package(
             targets: ["ProntoSoccorsoKit"])
     ],
     dependencies: [
-        .package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.0.0")
+        .package(url: "https://github.com/scinfu/SwiftSoup.git", .exact("2.2.1"))
     ],
     targets: [
         .target(

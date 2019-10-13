@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
     s.source_files = 'ProntoSoccorsoKit/**/*.swift'
 
-    s.dependency "SwiftSoup", '~> 2.0.0'
+    s.dependency "SwiftSoup", '2.2.1'
 
     s.swift_versions = ['5']
 

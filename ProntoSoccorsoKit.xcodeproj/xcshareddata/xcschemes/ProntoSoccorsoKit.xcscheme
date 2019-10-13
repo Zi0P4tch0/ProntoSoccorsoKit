@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "951E5981234A4E8D00F44D06"
-               BuildableName = "libProntoSoccorsoKit.a"
+               BlueprintIdentifier = "9537792A235322CC00856130"
+               BuildableName = "ProntoSoccorsoKit.framework"
                BlueprintName = "ProntoSoccorsoKit"
                ReferencedContainer = "container:ProntoSoccorsoKit.xcodeproj">
             </BuildableReference>
@@ -26,18 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES"
-      onlyGenerateCoverageForSpecifiedTargets = "YES">
-      <CodeCoverageTargets>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "951E5981234A4E8D00F44D06"
-            BuildableName = "libProntoSoccorsoKit.a"
-            BlueprintName = "ProntoSoccorsoKit"
-            ReferencedContainer = "container:ProntoSoccorsoKit.xcodeproj">
-         </BuildableReference>
-      </CodeCoverageTargets>
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -71,8 +60,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "951E5981234A4E8D00F44D06"
-            BuildableName = "libProntoSoccorsoKit.a"
+            BlueprintIdentifier = "9537792A235322CC00856130"
+            BuildableName = "ProntoSoccorsoKit.framework"
             BlueprintName = "ProntoSoccorsoKit"
             ReferencedContainer = "container:ProntoSoccorsoKit.xcodeproj">
          </BuildableReference>

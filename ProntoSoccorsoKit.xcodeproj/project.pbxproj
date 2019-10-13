@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,29 +18,29 @@
 		951CEA19234F1CB00047DB8F /* InstituteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 951CEA18234F1CB00047DB8F /* InstituteViewController.xib */; };
 		951CEA1D234F363B0047DB8F /* TriageDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA1C234F363B0047DB8F /* TriageDataView.swift */; };
 		951CEA1F234F47D60047DB8F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CEA1E234F47D60047DB8F /* SwiftUIView.swift */; };
-		951E5986234A4E8D00F44D06 /* ProntoSoccorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */; };
-		951E598D234A4E9E00F44D06 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E598C234A4E9E00F44D06 /* Regions.swift */; };
-		951E5992234A4F0800F44D06 /* Lazio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5991234A4F0800F44D06 /* Lazio.swift */; };
-		951E5995234A4FDF00F44D06 /* HealthInstitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5994234A4FDF00F44D06 /* HealthInstitute.swift */; };
-		951E5998234A552100F44D06 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5997234A552100F44D06 /* Provider.swift */; };
-		951E599A234A554500F44D06 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5999234A554500F44D06 /* Request.swift */; };
-		951E59A7234A636A00F44D06 /* libProntoSoccorsoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */; };
-		951E59CB234B141300F44D06 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 951E59CA234B141300F44D06 /* SwiftSoup */; };
-		951E59D1234B155900F44D06 /* Taranto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D0234B155900F44D06 /* Taranto.swift */; };
 		951E59D3234B21AB00F44D06 /* RegioneLazioProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D2234B21AB00F44D06 /* RegioneLazioProviderTests.swift */; };
 		951E59D5234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D4234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift */; };
-		951E59D8234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */; };
-		952617F6234F936E009F1E88 /* Lazio+RawResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952617F5234F936E009F1E88 /* Lazio+RawResponses.swift */; };
-		952617F8234FA2F6009F1E88 /* Lazio+Improvements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952617F7234FA2F6009F1E88 /* Lazio+Improvements.swift */; };
-		9533FD56234C6ABA00593CE5 /* Trento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD55234C6ABA00593CE5 /* Trento.swift */; };
 		9533FD58234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */; };
+		95377933235322F100856130 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E598C234A4E9E00F44D06 /* Regions.swift */; };
+		95377934235322F100856130 /* ProntoSoccorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */; };
+		95377935235322F900856130 /* HealthInstitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5994234A4FDF00F44D06 /* HealthInstitute.swift */; };
+		95377936235322FD00856130 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5997234A552100F44D06 /* Provider.swift */; };
+		95377937235322FD00856130 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F12234B8E1B009B091F /* Helpers.swift */; };
+		953779382353230200856130 /* FriuliVeneziaGiulia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D7234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift */; };
+		953779392353230600856130 /* Lazio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5991234A4F0800F44D06 /* Lazio.swift */; };
+		9537793A2353230600856130 /* Lazio+RawResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952617F5234F936E009F1E88 /* Lazio+RawResponses.swift */; };
+		9537793B2353230600856130 /* Lazio+Improvements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952617F7234FA2F6009F1E88 /* Lazio+Improvements.swift */; };
+		9537793C2353230A00856130 /* ValtellinaEAltoLario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CBC234BE94400D86E43 /* ValtellinaEAltoLario.swift */; };
+		9537793D2353230D00856130 /* Taranto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E59D0234B155900F44D06 /* Taranto.swift */; };
+		9537793E2353231000856130 /* Trento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533FD55234C6ABA00593CE5 /* Trento.swift */; };
+		9537793F2353231800856130 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E5999234A554500F44D06 /* Request.swift */; };
+		953779402353231800856130 /* CombinedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A48505234C514C000FE936 /* CombinedRequest.swift */; };
+		953779412353231800856130 /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F07234B620D009B091F /* Scraper.swift */; };
 		953D3CA3234BC07000D86E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA2234BC07000D86E43 /* AppDelegate.swift */; };
 		953D3CA5234BC07000D86E43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CA4234BC07000D86E43 /* SceneDelegate.swift */; };
 		953D3CA9234BC07100D86E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CA8234BC07100D86E43 /* Assets.xcassets */; };
 		953D3CAC234BC07100D86E43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CAB234BC07100D86E43 /* Preview Assets.xcassets */; };
 		953D3CAF234BC07100D86E43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953D3CAD234BC07100D86E43 /* LaunchScreen.storyboard */; };
-		953D3CB6234BC0D300D86E43 /* libProntoSoccorsoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */; };
-		953D3CBD234BE94400D86E43 /* ValtellinaEAltoLario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953D3CBC234BE94400D86E43 /* ValtellinaEAltoLario.swift */; };
 		954C0A15234D172100F90B52 /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C0A14234D172100F90B52 /* DemoAppUITests.swift */; };
 		956327B7234E82BF004DE189 /* RegionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B0234E82BF004DE189 /* RegionListPresenter.swift */; };
 		956327B8234E82BF004DE189 /* RegionListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327B1234E82BF004DE189 /* RegionListRouter.swift */; };
@@ -62,28 +62,16 @@
 		956327D6234E9182004DE189 /* InstituteListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327CF234E9182004DE189 /* InstituteListConfigurator.swift */; };
 		956327D8234E91A4004DE189 /* InstituteListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956327D7234E91A4004DE189 /* InstituteListViewController.xib */; };
 		956327DF234EA51E004DE189 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956327DE234EA51E004DE189 /* LoadingView.swift */; };
-		95908F08234B620D009B091F /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F07234B620D009B091F /* Scraper.swift */; };
+		957E02D32353313C00F89597 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957E02D22353313C00F89597 /* SwiftSoup.framework */; };
+		957E02D62353317400F89597 /* ProntoSoccorsoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9537792B235322CC00856130 /* ProntoSoccorsoKit.framework */; };
+		957E02E3235336D300F89597 /* SwiftSoup.framework in Copy SwiftSoup.framework */ = {isa = PBXBuildFile; fileRef = 957E02D22353313C00F89597 /* SwiftSoup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		957E02E8235337BD00F89597 /* ProntoSoccorsoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9537792B235322CC00856130 /* ProntoSoccorsoKit.framework */; };
+		957E02E9235337BD00F89597 /* ProntoSoccorsoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9537792B235322CC00856130 /* ProntoSoccorsoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95908F0A234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F09234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift */; };
-		95908F13234B8E1B009B091F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95908F12234B8E1B009B091F /* Helpers.swift */; };
 		95A48504234C4D54000FE936 /* RegioneLombardiaValtellinaEAltoLarioProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A48503234C4D54000FE936 /* RegioneLombardiaValtellinaEAltoLarioProviderTests.swift */; };
-		95A48506234C514C000FE936 /* CombinedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A48505234C514C000FE936 /* CombinedRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		951E59A8234A636A00F44D06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 951E597A234A4E8D00F44D06 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 951E5981234A4E8D00F44D06;
-			remoteInfo = ProntoSoccorsoKit;
-		};
-		953D3CB4234BC0CD00D86E43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 951E597A234A4E8D00F44D06 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 951E5981234A4E8D00F44D06;
-			remoteInfo = ProntoSoccorsoKit;
-		};
 		954C0A17234D172100F90B52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 951E597A234A4E8D00F44D06 /* Project object */;
@@ -91,16 +79,43 @@
 			remoteGlobalIDString = 953D3C9F234BC07000D86E43;
 			remoteInfo = DemoApp;
 		};
+		957E02D42353314E00F89597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 951E597A234A4E8D00F44D06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9537792A235322CC00856130;
+			remoteInfo = ProntoSoccorsoKit;
+		};
+		957E02E4235336F900F89597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 951E597A234A4E8D00F44D06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9537792A235322CC00856130;
+			remoteInfo = ProntoSoccorsoKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		951E5980234A4E8D00F44D06 /* CopyFiles */ = {
+		957E02E2235336C000F89597 /* Copy SwiftSoup.framework */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "";
+			dstSubfolderSpec = 10;
 			files = (
+				957E02E3235336D300F89597 /* SwiftSoup.framework in Copy SwiftSoup.framework */,
 			);
+			name = "Copy SwiftSoup.framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957E02EA235337BD00F89597 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				957E02E9235337BD00F89597 /* ProntoSoccorsoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -117,7 +132,6 @@
 		951CEA18234F1CB00047DB8F /* InstituteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstituteViewController.xib; sourceTree = "<group>"; };
 		951CEA1C234F363B0047DB8F /* TriageDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriageDataView.swift; sourceTree = "<group>"; };
 		951CEA1E234F47D60047DB8F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProntoSoccorsoKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProntoSoccorso.swift; sourceTree = "<group>"; };
 		951E598C234A4E9E00F44D06 /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
 		951E5991234A4F0800F44D06 /* Lazio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lazio.swift; sourceTree = "<group>"; };
@@ -134,6 +148,9 @@
 		952617F7234FA2F6009F1E88 /* Lazio+Improvements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lazio+Improvements.swift"; sourceTree = "<group>"; };
 		9533FD55234C6ABA00593CE5 /* Trento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trento.swift; sourceTree = "<group>"; };
 		9533FD57234C731900593CE5 /* RegioneTrentinoAltoAdigeTrentoProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegioneTrentinoAltoAdigeTrentoProviderTests.swift; sourceTree = "<group>"; };
+		9537792B235322CC00856130 /* ProntoSoccorsoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProntoSoccorsoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9537792D235322CC00856130 /* ProntoSoccorsoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProntoSoccorsoKit.h; sourceTree = "<group>"; };
+		9537792E235322CC00856130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		953D3CA0234BC07000D86E43 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953D3CA2234BC07000D86E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953D3CA4234BC07000D86E43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +182,7 @@
 		956327CF234E9182004DE189 /* InstituteListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituteListConfigurator.swift; sourceTree = "<group>"; };
 		956327D7234E91A4004DE189 /* InstituteListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstituteListViewController.xib; sourceTree = "<group>"; };
 		956327DE234EA51E004DE189 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		957E02D22353313C00F89597 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/iOS/SwiftSoup.framework; sourceTree = "<group>"; };
 		95908EF2234B5ED3009B091F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		95908EF4234B5F2E009B091F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.2.tbd; sourceTree = DEVELOPER_DIR; };
 		95908F07234B620D009B091F /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
@@ -175,19 +193,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		951E597F234A4E8D00F44D06 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				951E59CB234B141300F44D06 /* SwiftSoup in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		951E599F234A636A00F44D06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				951E59A7234A636A00F44D06 /* libProntoSoccorsoKit.a in Frameworks */,
+				957E02D62353317400F89597 /* ProntoSoccorsoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95377928235322CC00856130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957E02D32353313C00F89597 /* SwiftSoup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953D3CB6234BC0D300D86E43 /* libProntoSoccorsoKit.a in Frameworks */,
+				957E02E8235337BD00F89597 /* ProntoSoccorsoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +274,10 @@
 		951E5983234A4E8D00F44D06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */,
 				951E59A2234A636A00F44D06 /* ProntoSoccorsoKitTests.xctest */,
 				953D3CA0234BC07000D86E43 /* DemoApp.app */,
 				954C0A12234D172100F90B52 /* DemoAppUITests.xctest */,
+				9537792B235322CC00856130 /* ProntoSoccorsoKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,6 +285,8 @@
 		951E5984234A4E8D00F44D06 /* ProntoSoccorsoKit */ = {
 			isa = PBXGroup;
 			children = (
+				9537792D235322CC00856130 /* ProntoSoccorsoKit.h */,
+				9537792E235322CC00856130 /* Info.plist */,
 				951E598C234A4E9E00F44D06 /* Regions.swift */,
 				951E5985234A4E8D00F44D06 /* ProntoSoccorso.swift */,
 				951E5993234A4FD600F44D06 /* Data Model */,
@@ -334,6 +354,7 @@
 		951E59C7234A955400F44D06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				957E02D22353313C00F89597 /* SwiftSoup.framework */,
 				95908EF4234B5F2E009B091F /* libxml2.2.tbd */,
 				95908EF2234B5ED3009B091F /* libxml2.tbd */,
 			);
@@ -467,29 +488,17 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 951E5989234A4E8D00F44D06 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKit" */;
-			buildPhases = (
-				951E597E234A4E8D00F44D06 /* Sources */,
-				951E597F234A4E8D00F44D06 /* Frameworks */,
-				951E5980234A4E8D00F44D06 /* CopyFiles */,
-				95B24626234A9232000EC3E3 /* Resources */,
+/* Begin PBXHeadersBuildPhase section */
+		95377926235322CC00856130 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
-			buildRules = (
-			);
-			dependencies = (
-				951E59CD234B142200F44D06 /* PBXTargetDependency */,
-			);
-			name = ProntoSoccorsoKit;
-			packageProductDependencies = (
-				951E59CA234B141300F44D06 /* SwiftSoup */,
-			);
-			productName = ProntoSoccorsoKit;
-			productReference = 951E5982234A4E8D00F44D06 /* libProntoSoccorsoKit.a */;
-			productType = "com.apple.product-type.library.static";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
 		951E59A1234A636A00F44D06 /* ProntoSoccorsoKitTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 951E59AA234A636A00F44D06 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKitTests" */;
@@ -497,16 +506,35 @@
 				951E599E234A636A00F44D06 /* Sources */,
 				951E599F234A636A00F44D06 /* Frameworks */,
 				951E59A0234A636A00F44D06 /* Resources */,
+				957E02E2235336C000F89597 /* Copy SwiftSoup.framework */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				951E59A9234A636A00F44D06 /* PBXTargetDependency */,
+				957E02D52353314E00F89597 /* PBXTargetDependency */,
 			);
 			name = ProntoSoccorsoKitTests;
 			productName = ProntoSoccorsoKitTests;
 			productReference = 951E59A2234A636A00F44D06 /* ProntoSoccorsoKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9537792A235322CC00856130 /* ProntoSoccorsoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95377930235322CC00856130 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKit" */;
+			buildPhases = (
+				95377926235322CC00856130 /* Headers */,
+				95377927235322CC00856130 /* Sources */,
+				95377928235322CC00856130 /* Frameworks */,
+				95377929235322CC00856130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProntoSoccorsoKit;
+			productName = ProntoSoccorsoKit;
+			productReference = 9537792B235322CC00856130 /* ProntoSoccorsoKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		953D3C9F234BC07000D86E43 /* DemoApp */ = {
 			isa = PBXNativeTarget;
@@ -515,11 +543,13 @@
 				953D3C9C234BC07000D86E43 /* Sources */,
 				953D3C9D234BC07000D86E43 /* Frameworks */,
 				953D3C9E234BC07000D86E43 /* Resources */,
+				957E02E72353372000F89597 /* Carthage */,
+				957E02EA235337BD00F89597 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				953D3CB5234BC0CD00D86E43 /* PBXTargetDependency */,
+				957E02E5235336F900F89597 /* PBXTargetDependency */,
 			);
 			name = DemoApp;
 			packageProductDependencies = (
@@ -556,13 +586,12 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Matteo Pacini";
 				TargetAttributes = {
-					951E5981234A4E8D00F44D06 = {
-						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1110;
-					};
 					951E59A1234A636A00F44D06 = {
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
+					};
+					9537792A235322CC00856130 = {
+						CreatedOnToolsVersion = 11.1;
 					};
 					953D3C9F234BC07000D86E43 = {
 						CreatedOnToolsVersion = 11.1;
@@ -583,13 +612,12 @@
 			);
 			mainGroup = 951E5979234A4E8D00F44D06;
 			packageReferences = (
-				951E59C9234B141300F44D06 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = 951E5983234A4E8D00F44D06 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */,
+				9537792A235322CC00856130 /* ProntoSoccorsoKit */,
 				951E59A1234A636A00F44D06 /* ProntoSoccorsoKitTests */,
 				953D3C9F234BC07000D86E43 /* DemoApp */,
 				954C0A11234D172100F90B52 /* DemoAppUITests */,
@@ -599,6 +627,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		951E59A0234A636A00F44D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95377929235322CC00856130 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -626,38 +661,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95B24626234A9232000EC3E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		951E597E234A4E8D00F44D06 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		957E02E72353372000F89597 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				951E59D8234B3D5B00F44D06 /* FriuliVeneziaGiulia.swift in Sources */,
-				9533FD56234C6ABA00593CE5 /* Trento.swift in Sources */,
-				951E599A234A554500F44D06 /* Request.swift in Sources */,
-				951E5986234A4E8D00F44D06 /* ProntoSoccorso.swift in Sources */,
-				953D3CBD234BE94400D86E43 /* ValtellinaEAltoLario.swift in Sources */,
-				95908F13234B8E1B009B091F /* Helpers.swift in Sources */,
-				951E59D1234B155900F44D06 /* Taranto.swift in Sources */,
-				951E5992234A4F0800F44D06 /* Lazio.swift in Sources */,
-				952617F8234FA2F6009F1E88 /* Lazio+Improvements.swift in Sources */,
-				951E5995234A4FDF00F44D06 /* HealthInstitute.swift in Sources */,
-				952617F6234F936E009F1E88 /* Lazio+RawResponses.swift in Sources */,
-				951E5998234A552100F44D06 /* Provider.swift in Sources */,
-				951E598D234A4E9E00F44D06 /* Regions.swift in Sources */,
-				95908F08234B620D009B091F /* Scraper.swift in Sources */,
-				95A48506234C514C000FE936 /* CombinedRequest.swift in Sources */,
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftSoup.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		951E599E234A636A00F44D06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -667,6 +695,28 @@
 				951E59D5234B2D6700F44D06 /* RegionePugliaTarantoProviderTests.swift in Sources */,
 				95908F0A234B7A35009B091F /* RegioneFriuliVeneziaGiuliaProviderTests.swift in Sources */,
 				951E59D3234B21AB00F44D06 /* RegioneLazioProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95377927235322CC00856130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95377936235322FD00856130 /* Provider.swift in Sources */,
+				9537793F2353231800856130 /* Request.swift in Sources */,
+				953779402353231800856130 /* CombinedRequest.swift in Sources */,
+				9537793A2353230600856130 /* Lazio+RawResponses.swift in Sources */,
+				95377935235322F900856130 /* HealthInstitute.swift in Sources */,
+				9537793C2353230A00856130 /* ValtellinaEAltoLario.swift in Sources */,
+				95377934235322F100856130 /* ProntoSoccorso.swift in Sources */,
+				95377937235322FD00856130 /* Helpers.swift in Sources */,
+				953779412353231800856130 /* Scraper.swift in Sources */,
+				953779382353230200856130 /* FriuliVeneziaGiulia.swift in Sources */,
+				9537793B2353230600856130 /* Lazio+Improvements.swift in Sources */,
+				953779392353230600856130 /* Lazio.swift in Sources */,
+				9537793D2353230D00856130 /* Taranto.swift in Sources */,
+				95377933235322F100856130 /* Regions.swift in Sources */,
+				9537793E2353231000856130 /* Trento.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,25 +767,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		951E59A9234A636A00F44D06 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */;
-			targetProxy = 951E59A8234A636A00F44D06 /* PBXContainerItemProxy */;
-		};
-		951E59CD234B142200F44D06 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			productRef = 951E59CC234B142200F44D06 /* SwiftSoup */;
-		};
-		953D3CB5234BC0CD00D86E43 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 951E5981234A4E8D00F44D06 /* ProntoSoccorsoKit */;
-			targetProxy = 953D3CB4234BC0CD00D86E43 /* PBXContainerItemProxy */;
-		};
 		954C0A18234D172100F90B52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 953D3C9F234BC07000D86E43 /* DemoApp */;
 			targetProxy = 954C0A17234D172100F90B52 /* PBXContainerItemProxy */;
+		};
+		957E02D52353314E00F89597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9537792A235322CC00856130 /* ProntoSoccorsoKit */;
+			targetProxy = 957E02D42353314E00F89597 /* PBXContainerItemProxy */;
+		};
+		957E02E5235336F900F89597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9537792A235322CC00856130 /* ProntoSoccorsoKit */;
+			targetProxy = 957E02E4235336F900F89597 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -865,55 +910,16 @@
 			};
 			name = Release;
 		};
-		951E598A234A4E8D00F44D06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DSM3BQ7EM4;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		951E598B234A4E8D00F44D06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DSM3BQ7EM4;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		951E59AB234A636A00F44D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ProntoSoccorsoKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -934,6 +940,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ProntoSoccorsoKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -944,6 +954,68 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95377931235322CC00856130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ProntoSoccorsoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.codecraft.ProntoSoccorsoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95377932235322CC00856130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DSM3BQ7EM4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ProntoSoccorsoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.codecraft.ProntoSoccorsoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1041,20 +1113,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		951E5989234A4E8D00F44D06 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				951E598A234A4E8D00F44D06 /* Debug */,
-				951E598B234A4E8D00F44D06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		951E59AA234A636A00F44D06 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				951E59AB234A636A00F44D06 /* Debug */,
 				951E59AC234A636A00F44D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95377930235322CC00856130 /* Build configuration list for PBXNativeTarget "ProntoSoccorsoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95377931235322CC00856130 /* Debug */,
+				95377932235322CC00856130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1078,30 +1150,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		951E59C9234B141300F44D06 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		951E59CA234B141300F44D06 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 951E59C9234B141300F44D06 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-		951E59CC234B142200F44D06 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 951E59C9234B141300F44D06 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 951E597A234A4E8D00F44D06 /* Project object */;
 }

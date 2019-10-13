@@ -9,7 +9,7 @@ public enum ProntoSoccorso {
     /// - Returns: A request object for the specified region.
     ///
     public static func region(_ region: Region) -> Request {
-        RequestImplementation(for: region)
+        return RequestImplementation(for: region)
     }
 
     /// Creates a request for pronto soccorso's data for multiple regions.

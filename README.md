@@ -1,5 +1,9 @@
 # ProntoSoccorsoKit
 
+<p align="center">
+<img src="img/framework.png" width="300">
+</p>
+
 Artwork & demo app icon kindly provided by [Alessandro Vercellino](mailto:independentdesign@outlook.it).
 
 ## Usage

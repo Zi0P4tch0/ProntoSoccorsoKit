@@ -1,5 +1,3 @@
-# ProntoSoccorsoKit
-
 <p align="center">
 <img src="img/framework.png" width="300">
 </p>
@@ -45,7 +43,29 @@ A demo app is included to show the currently availble data, and how to fetch it.
 
 # Installation
 
-```
+ProntoSoccorsoKit can easily be integrated via SwiftPM, Carthage or Cocoapods.
+
+## SwiftPM
+
+Add this github repo to Xcode 11.x
+> File -> Swift Packages -> Add Swift Dependency
+
+and enter:
+
+`https://github.com/Zi0P4tch0/ProntoSoccorsoKit`
+
+Link **ProntoSoccorsoKit** against your app target.
+
+## Carthage
+
+`github "Zi0P4tch0/ProntoSoccorsoKit" "0.1.0"`
+
+## Cocoapods
+
+```ruby
+target YourApp do
+    pod "ProntoSoccorsoKit", "~>0.1.0"
+end
 ```
 
 ## App Transport Security
